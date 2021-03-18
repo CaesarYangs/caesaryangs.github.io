@@ -9,7 +9,7 @@
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
 <title>计算机组成原理课程笔记 | Stories</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1616053856731">
+<link rel="shortcut icon" href="/favicon.ico?v=1616053979914">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -249,7 +249,12 @@
 <li>
 <ul>
 <li><a href="#%E7%BB%AA%E8%AE%BA">绪论</a></li>
-<li><a href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA">计算机系统概论</a></li>
+<li><a href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA">计算机系统概论</a><br>
+*
+<ul>
+<li><a href="#%E5%86%AF%E8%AF%BA%E4%BE%9D%E6%9B%BC%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%89%B9%E7%82%B9">^^冯诺依曼计算机特点^^</a></li>
+</ul>
+</li>
 <li><a href="#%E6%80%BB%E7%BA%BF">总线</a>
 <ul>
 <li><a href="#%E6%80%BB%E7%BA%BF%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">总线基本概念</a></li>
@@ -561,12 +566,12 @@
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>1<span class="language" data-lan="minute">分钟</span></span>
+      <span>2<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>232<span class="pc-show language" data-lan="words">字数</span></span>
+      <span>399<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
   </div>
@@ -620,8 +625,52 @@
 </ul>
 <!-- more -->
 <p>###计算机基本组成</p>
+<h4 id="冯诺依曼计算机特点">^<sup>冯诺依曼计算机特点</sup>^</h4>
+<pre><code>- 计算机由五大部件组成
+    - 输入 输出 存储器 运算器 控制器
+- 指令和数据以同等地位存于储存器 可按地址寻访
+- 指令和数据用二进制表示
+- 指令由操作码和地址码组成
+- 存储程序
+- 以运算器为中心
+</code></pre>
+<ul>
+<li>计算机硬件框图
+<ul>
+<li>以储存器为中心的硬件框图</li>
+<li>存储墙</li>
+</ul>
+</li>
+<li>现代计算机硬件框图
+<ul>
+<li>CPU
+<ul>
+<li><strong>运算器 ALU</strong></li>
+<li><strong>控制器 CU</strong></li>
+</ul>
+</li>
+<li><strong>存储器</strong>
+<ul>
+<li>主存</li>
+<li>辅存</li>
+</ul>
+</li>
+<li><strong>输入设备</strong></li>
+<li><strong>输出设备</strong></li>
+</ul>
+</li>
+</ul>
 <!-- more -->
 <p>###计算机工作步骤</p>
+<ul>
+<li>指令格式
+<ul>
+<li>操作码+地址码</li>
+</ul>
+</li>
+<li>寄存器</li>
+<li>运算器基本组成及操作过程</li>
+</ul>
 <!-- more -->
 <h2 id="总线">总线</h2>
 <!-- more -->
@@ -1196,8 +1245,52 @@
 &lt;/ul&gt;
 &lt;!-- more --&gt;
 &lt;p&gt;###计算机基本组成&lt;/p&gt;
+&lt;h4 id=&#34;冯诺依曼计算机特点&#34;&gt;^&lt;sup&gt;冯诺依曼计算机特点&lt;/sup&gt;^&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;- 计算机由五大部件组成
+    - 输入 输出 存储器 运算器 控制器
+- 指令和数据以同等地位存于储存器 可按地址寻访
+- 指令和数据用二进制表示
+- 指令由操作码和地址码组成
+- 存储程序
+- 以运算器为中心
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;计算机硬件框图
+&lt;ul&gt;
+&lt;li&gt;以储存器为中心的硬件框图&lt;/li&gt;
+&lt;li&gt;存储墙&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;现代计算机硬件框图
+&lt;ul&gt;
+&lt;li&gt;CPU
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;运算器 ALU&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;控制器 CU&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;存储器&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;主存&lt;/li&gt;
+&lt;li&gt;辅存&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;输入设备&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;输出设备&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- more --&gt;
 &lt;p&gt;###计算机工作步骤&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;指令格式
+&lt;ul&gt;
+&lt;li&gt;操作码+地址码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;寄存器&lt;/li&gt;
+&lt;li&gt;运算器基本组成及操作过程&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- more --&gt;
 &lt;h2 id=&#34;总线&#34;&gt;总线&lt;/h2&gt;
 &lt;!-- more --&gt;
