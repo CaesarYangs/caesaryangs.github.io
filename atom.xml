@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://caesaryangs.github.io</id>
     <title>Stories</title>
-    <updated>2021-03-18T07:35:00.369Z</updated>
+    <updated>2021-03-18T07:46:14.558Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://caesaryangs.github.io"/>
     <link rel="self" href="https://caesaryangs.github.io/atom.xml"/>
@@ -22,18 +22,18 @@
 <!-- more -->
 <h2 id="绪论">绪论</h2>
 <ul>
-<li>&quot;<strong>课程概览</strong>&quot;
+<li><strong>课程概览</strong>
 <ul>
-<li>&quot;计算机+组成+原理&quot;</li>
-<li>&quot;基本部件的结构和组织方式&quot;</li>
-<li>&quot;基本运算的操作原理&quot;</li>
-<li>&quot;基本部件和单元的设计思想&quot;</li>
-<li>&quot;难点：&quot;
+<li>计算机+组成+原理</li>
+<li>基本部件的结构和组织方式</li>
+<li>基本运算的操作原理</li>
+<li>基本部件和单元的设计思想</li>
+<li>难点：
 <ul>
-<li>&quot;存储器&quot;</li>
-<li>&quot;计算机运算方法&quot;</li>
-<li>&quot;指令系统&quot;</li>
-<li>&quot;CPU</li>
+<li>存储器</li>
+<li>计算机运算方法</li>
+<li>指令系统</li>
+<li>CPU</li>
 </ul>
 </li>
 </ul>
@@ -41,6 +41,33 @@
 </ul>
 <!-- more -->
 <h2 id="计算机系统概论">计算机系统概论</h2>
+<!-- more -->
+<p>###计算机系统简介<br>
+111111</p>
+<!-- more -->
+<p>###计算机基本组成</p>
+<!-- more -->
+<p>###计算机工作步骤</p>
+<!-- more -->
+<h2 id="总线">总线</h2>
+<!-- more -->
+<h3 id="总线基本概念">总线基本概念</h3>
+<!-- more -->
+<h3 id="总线的分类">总线的分类</h3>
+<!-- more -->
+<h3 id="总线特性及性能指标">总线特性及性能指标</h3>
+<!-- more -->
+<h3 id="总线结构">总线结构</h3>
+<!-- more -->
+<h3 id="总线控制">总线控制</h3>
+<!-- more -->
+<h3 id="总线通信控制">总线通信控制</h3>
+<!-- more -->
+<h2 id="计算机运算方法">计算机运算方法</h2>
+<!-- more -->
+<h3 id="无符号数和有符号数">无符号数和有符号数</h3>
+<!-- more -->
+<h3 id="数的定点表示和浮点表示">数的定点表示和浮点表示</h3>
 ]]></content>
     </entry>
     <entry>
