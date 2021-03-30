@@ -9,7 +9,7 @@
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#2e5c6e">
 <title>Stories</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1616056445648">
+<link rel="shortcut icon" href="/favicon.ico?v=1617117119487">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -668,9 +668,105 @@
 &lt;!-- more --&gt;
 &lt;h2 id=&#34;计算机运算方法&#34;&gt;计算机运算方法&lt;/h2&gt;
 &lt;!-- more --&gt;
-&lt;h3 id=&#34;无符号数和有符号数&#34;&gt;无符号数和有符号数&lt;/h3&gt;
+&lt;h3 id=&#34;61-无符号数和有符号数&#34;&gt;6.1 无符号数和有符号数&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;6.1.1无符号数#[[第六章 计算机运算方法]]
+&lt;ul&gt;
+&lt;li&gt;寄存器的位数 放多少个0/1&lt;/li&gt;
+&lt;li&gt;反应无符号数的表示范围&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;6.1.2有符号数#[[第六章 计算机运算方法]]
+&lt;ul&gt;
+&lt;li&gt;机器数与真值
+&lt;ul&gt;
+&lt;li&gt;真值：带符号的数
+&lt;ul&gt;
+&lt;li&gt;真值表示法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;机器数：符号数字化的数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;6.1.3原码表示法#[[第六章 计算机运算方法]]#[[计算机码]]
+&lt;ul&gt;
+&lt;li&gt;定义：第一位表示符号 后面表示数&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;注意小数的表示&lt;/strong&gt; 第一位表示符号&lt;/li&gt;
+&lt;li&gt;补充位数到寄存器的位数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;6.1.4补码表示法#[[第六章 计算机运算方法]]&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;与负数等价的正数代替负数&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;quot;补的概念&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;利用时钟为例 mod&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;&lt;strong&gt;寄存器长度有限=mod&lt;/strong&gt;&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;补数&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;quot;结论&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;一个负数加上模即得该负数的补数&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;quot;一个正数和一个附属互为补数时 他们的绝对值之和即为模数&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;quot;正数的补数是其本身&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;补码定义&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;用数表示符号-码&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;quot;整数&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FSubjects%2Fa1Kf0AcRJf.png?alt=media&amp;amp;token=237929d2-52a9-4dee-8f97-3b141564752a&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;小数&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FSubjects%2FiNwMaB6fkO.png?alt=media&amp;amp;token=538bcd3c-545d-4c65-a3ea-4c6af5359ac4&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;求补码的快捷方式&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;按位取反 末尾加1 (用原码取反 )&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;^&lt;sup&gt;**补码多表示一个数**&lt;/sup&gt;^&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;-128&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;quot;-1&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;quot;不能按位取反&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;*反码&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;quot;移码&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;补码很难判断其真值的大小&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;quot;定义&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FSubjects%2FexokFrwFdN.png?alt=media&amp;amp;token=d3ae590a-176c-4da8-9337-69871b8c3689&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;与补码的比较&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;&lt;strong&gt;基本相同 只有最高符号位不同 数值位完全相同&lt;/strong&gt;&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- more --&gt;
-&lt;h3 id=&#34;数的定点表示和浮点表示&#34;&gt;数的定点表示和浮点表示&lt;/h3&gt;
+&lt;h3 id=&#34;62-数的定点表示和浮点表示&#34;&gt;6.2 数的定点表示和浮点表示&lt;/h3&gt;
+&lt;!-- more --&gt;
+&lt;h3 id=&#34;63-定点运算&#34;&gt;6.3 定点运算&lt;/h3&gt;
 ">计算机组成原理课程笔记</a>
       </div>
       
