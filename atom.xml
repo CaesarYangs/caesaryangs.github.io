@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://caesaryangs.github.io</id>
     <title>Stories</title>
-    <updated>2021-03-30T15:18:33.310Z</updated>
+    <updated>2021-03-31T11:37:59.476Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://caesaryangs.github.io"/>
     <link rel="self" href="https://caesaryangs.github.io/atom.xml"/>
@@ -235,7 +235,44 @@
 <!-- more -->
 <h3 id="62-数的定点表示和浮点表示">6.2 数的定点表示和浮点表示</h3>
 <!-- more -->
-<h3 id="63-定点运算">6.3 定点运算</h3>
+<h3 id="定点运算">定点运算</h3>
+<pre><code>- 移位的意义
+    - 移数 因为是定点机
+- 算数移位规则
+    - 补码：^^左移添0 右移添1^^
+    - 其他码制：直接补0
+    - 硬件实现
+- 加减法运算
+    - 补码
+        - 加法 补码相加取反
+        - 减法
+        - 连同符号为一起相加，符号位产生的进位（最高位）自然丢掉
+- 溢出判断#[[判断溢出]]
+    - 一位符号判别溢出
+        - ⊕异或操作 异或=1溢出
+        - 最高有效位仅为⊕符号位进位=1 溢出
+    - 两位符号位判断溢出
+        - 符号位之前加一位原始符号位 判断是否相同来判断溢出
+        - ^^最高符号位代表真正的符号^^
+- 补码加减法的硬件配置
+- &quot;乘法运算&quot;
+    - &quot;笔算乘法改进-递推公式-对于原码&quot;
+        - &quot;初始状态&quot;
+        - &quot;带乘数移位&quot;
+        - &quot;移位n次，加n次&quot;
+    - &quot;**补码乘法**&quot;
+        - &quot;__目的：不需要管原来的真正的数是什么，只需要这个码来运行即可__&quot;
+        - &quot;原始方法&quot;
+            - &quot;被乘数任意，乘数为正&quot;
+                - &quot;同原码乘&quot;
+                - &quot;但加和移位按补码规则运算&quot;
+                - &quot;运算乘积的符号自然形成&quot;
+            - &quot;被乘数任意，乘数为负&quot;
+                - &quot;乘数补 去掉符号位 操作同上&quot;
+        - &quot;^^Booth算法^^&quot;
+            - &quot;一位乘&quot;
+            - &quot;两位乘&quot;
+</code></pre>
 ]]></content>
     </entry>
     <entry>
