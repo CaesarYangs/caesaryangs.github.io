@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://caesaryangs.github.io</id>
     <title>Stories</title>
-    <updated>2021-03-31T11:37:59.476Z</updated>
+    <updated>2021-05-09T10:29:35.147Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://caesaryangs.github.io"/>
     <link rel="self" href="https://caesaryangs.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://caesaryangs.github.io/images/avatar.png</logo>
     <icon>https://caesaryangs.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Stories</rights>
+    <entry>
+        <title type="html"><![CDATA[数据库原理课程笔记]]></title>
+        <id>https://caesaryangs.github.io/post/shu-ju-ku-yuan-li-ke-cheng-bi-ji/</id>
+        <link href="https://caesaryangs.github.io/post/shu-ju-ku-yuan-li-ke-cheng-bi-ji/">
+        </link>
+        <updated>2021-05-09T10:28:59.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="关于数据库的进阶学习笔记">关于数据库的进阶学习笔记</h3>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[计算机组成原理课程笔记]]></title>
         <id>https://caesaryangs.github.io/post/ji-suan-ji-zu-cheng-yuan-li-ke-cheng-bi-ji/</id>
@@ -135,7 +144,7 @@
 <!-- more -->
 <h3 id="总线通信控制">总线通信控制</h3>
 <!-- more -->
-<h2 id="计算机运算方法">计算机运算方法</h2>
+<h2 id="计算机运算方法6">计算机运算方法（6）</h2>
 <!-- more -->
 <h3 id="61-无符号数和有符号数">6.1 无符号数和有符号数</h3>
 <ul>
@@ -233,7 +242,7 @@
 </li>
 </ul>
 <!-- more -->
-<h3 id="62-数的定点表示和浮点表示">6.2 数的定点表示和浮点表示</h3>
+<h3 id="数的定点表示和浮点表示">数的定点表示和浮点表示</h3>
 <!-- more -->
 <h3 id="定点运算">定点运算</h3>
 <pre><code>- 移位的意义
@@ -273,15 +282,32 @@
             - &quot;一位乘&quot;
             - &quot;两位乘&quot;
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[111]]></title>
-        <id>https://caesaryangs.github.io/post/111/</id>
-        <link href="https://caesaryangs.github.io/post/111/">
-        </link>
-        <updated>2021-03-17T01:44:34.000Z</updated>
-        <content type="html"><![CDATA[<p>111</p>
+<!-- more -->
+<h3 id="浮点四则运算">浮点四则运算</h3>
+<!-- more -->
+<h3 id="算术逻辑单元">算术逻辑单元</h3>
+<!-- more -->
+<h2 id="指令系统7">指令系统（7）</h2>
+<!-- more -->
+<h3 id="机器指令">机器指令</h3>
+<!-- more -->
+<h3 id="操作数类型和操作类型">操作数类型和操作类型</h3>
+<!-- more -->
+<h3 id="寻址方式">寻址方式</h3>
+<!-- more -->
+<h3 id="指令格式举例">指令格式举例</h3>
+<!-- more -->
+<h3 id="risc详解">RISC详解</h3>
+<!-- more -->
+<h2 id="存储器">存储器</h2>
+<!-- more -->
+<h3 id="概述">概述</h3>
+<!-- more -->
+<h3 id="主存储器">主存储器</h3>
+<!-- more -->
+<h3 id="高速缓冲存储器cache">高速缓冲存储器Cache</h3>
+<!-- more -->
+<h3 id="辅助存储器">辅助存储器</h3>
 ]]></content>
     </entry>
 </feed>
