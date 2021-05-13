@@ -9,7 +9,7 @@
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#2e5c6e">
 <title>Stories</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1620895189010">
+<link rel="shortcut icon" href="/favicon.ico?v=1620895734893">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -659,18 +659,288 @@
 &lt;/ul&gt;
 &lt;!-- more --&gt;
 &lt;h2 id=&#34;总线&#34;&gt;总线&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;重点：&lt;/li&gt;
+&lt;li&gt;串行 并行&lt;/li&gt;
+&lt;li&gt;片内总线&lt;/li&gt;
+&lt;li&gt;^&lt;sup&gt;系统总线&lt;/sup&gt;^&lt;/li&gt;
+&lt;li&gt;总线的性能指标&lt;/li&gt;
+&lt;li&gt;总线结构-分析优劣&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;超重点-35总线控制&#34;&gt;超重点 ^&lt;sup&gt;3.5总线控制&lt;/sup&gt;^&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;从链式查询到控制请求&lt;/li&gt;
+&lt;li&gt;根据时序逻辑图解释每一步的计算机处理过程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- more --&gt;
 &lt;h3 id=&#34;总线基本概念&#34;&gt;总线基本概念&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;总线的意义
+&lt;ul&gt;
+&lt;li&gt;总线是连接各个部件的信息传输线 ^&lt;sup&gt;是各个部件共享的传输介质&lt;/sup&gt;^&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;信息传送
+&lt;ul&gt;
+&lt;li&gt;串行&lt;/li&gt;
+&lt;li&gt;并行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;总线结构举例
+&lt;ul&gt;
+&lt;li&gt;面向CPU的双总线结构：存储总线+IO总线&lt;/li&gt;
+&lt;li&gt;单总线(系统总线)&lt;/li&gt;
+&lt;li&gt;以存储器为中心的双总线结构&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- more --&gt;
 &lt;h3 id=&#34;总线的分类&#34;&gt;总线的分类&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;片内总线
+&lt;ul&gt;
+&lt;li&gt;芯片内部总线&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;^&lt;sup&gt;系统总线&lt;/sup&gt;^
+&lt;ul&gt;
+&lt;li&gt;计算机各部件间的信息传输线&lt;/li&gt;
+&lt;li&gt;数据总线：双向-与机器字长，存储字长有关——对应MDR&lt;/li&gt;
+&lt;li&gt;地址总线：单向-与存储地址，IO地址有关——&lt;/li&gt;
+&lt;li&gt;控制总线：有出有入&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;通信总线
+&lt;ul&gt;
+&lt;li&gt;用于^&lt;sup&gt;计算机系统之间&lt;/sup&gt;&lt;sup&gt;或&lt;/sup&gt;&lt;sup&gt;计算机系统与其他系统&lt;/sup&gt;^之间的通信&lt;/li&gt;
+&lt;li&gt;串行&lt;/li&gt;
+&lt;li&gt;并行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- more --&gt;
 &lt;h3 id=&#34;总线特性及性能指标&#34;&gt;总线特性及性能指标&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;总线物理实现&lt;/li&gt;
+&lt;li&gt;总线特性
+&lt;ul&gt;
+&lt;li&gt;机械特性&lt;/li&gt;
+&lt;li&gt;电气特性 传输方向和有效的点平范围&lt;/li&gt;
+&lt;li&gt;功能特性 每跟传输线的功能&lt;/li&gt;
+&lt;li&gt;时间特性 信号的时序关系&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;总线的性能指标
+&lt;ul&gt;
+&lt;li&gt;总线宽度：数据线的根数&lt;/li&gt;
+&lt;li&gt;标准传输率：每秒传输的最大字节数&lt;/li&gt;
+&lt;li&gt;时钟同步异步&lt;/li&gt;
+&lt;li&gt;总线复用：地址线与数据线复用&lt;/li&gt;
+&lt;li&gt;信号线数&lt;/li&gt;
+&lt;li&gt;^&lt;sup&gt;总线控制方式：突发、自动、仲裁、逻辑、技术&lt;/sup&gt;^&lt;/li&gt;
+&lt;li&gt;其他指标：负载能力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;总线标准&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- more --&gt;
 &lt;h3 id=&#34;总线结构&#34;&gt;总线结构&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;单总线结构&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;多总线结构
+&lt;ul&gt;
+&lt;li&gt;双总线结构&lt;/li&gt;
+&lt;li&gt;三总线结构
+&lt;ul&gt;
+&lt;li&gt;主存总线&lt;/li&gt;
+&lt;li&gt;IO总线&lt;/li&gt;
+&lt;li&gt;DMA总线：连接主存和高速外设&lt;/li&gt;
+&lt;li&gt;另一种结构
+&lt;ul&gt;
+&lt;li&gt;局部总线&lt;/li&gt;
+&lt;li&gt;系统总线
+&lt;ul&gt;
+&lt;li&gt;在主存和缓存中交换信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;扩展总线&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;四总线结构&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;总线举例
+&lt;ul&gt;
+&lt;li&gt;PCI总线
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FSubjects%2Fco4maj5LK_.png?alt=media&amp;amp;token=527607d2-32d2-4b19-a657-8c4dfb5226b4&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/li&gt;
+&lt;li&gt;多层PCI总线结构&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;中大型计算机典型结构：利用通道&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- more --&gt;
 &lt;h3 id=&#34;总线控制&#34;&gt;总线控制&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;总线判优控制
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;基本概念&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;主设备对总线有^&lt;sup&gt;控制权&lt;/sup&gt;^&lt;/li&gt;
+&lt;li&gt;^&lt;sup&gt;响应&lt;/sup&gt;^从设备相应从主设备发来的总线命令&lt;/li&gt;
+&lt;li&gt;^&lt;sup&gt;总线判优控制&lt;/sup&gt;^
+&lt;ul&gt;
+&lt;li&gt;^&lt;sup&gt;集中式&lt;/sup&gt;^
+&lt;ul&gt;
+&lt;li&gt;链式查询
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FSubjects%2FYU9udB-pjY.png?alt=media&amp;amp;token=8f721cab-67f4-41ce-b2d6-c7b55bc7af18&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/li&gt;
+&lt;li&gt;BS-总线忙  BR-总线请求  BG-总线同意&lt;/li&gt;
+&lt;li&gt;问题
+&lt;ul&gt;
+&lt;li&gt;高优先级的设备将一直占用总线导致低优先级的设备无法获取总线使用权&lt;/li&gt;
+&lt;li&gt;容错性差&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;计数器定时查询
+&lt;ul&gt;
+&lt;li&gt;BS BR 设备地址线
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FSubjects%2FEWA6iszgMs.png?alt=media&amp;amp;token=3d5f359c-28c2-402c-abe1-d8fb51294d81&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/li&gt;
+&lt;li&gt;优点
+&lt;ul&gt;
+&lt;li&gt;总线控制部件依次向下问询&lt;/li&gt;
+&lt;li&gt;容错性较好&lt;/li&gt;
+&lt;li&gt;^^优先级不固定 计数器初始值可人为指定 灵活指定优先级^^&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;独立请求方式
+&lt;ul&gt;
+&lt;li&gt;排队器+每个IO接口独立接入总线控制部件&lt;/li&gt;
+&lt;li&gt;缺点
+&lt;ul&gt;
+&lt;li&gt;每个IO设备占用两条控制线 成本高&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;分布式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- more --&gt;
 &lt;h3 id=&#34;总线通信控制&#34;&gt;总线通信控制&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;总线通信控制
+&lt;ul&gt;
+&lt;li&gt;目的：解决通信双方协调配合的问题&lt;/li&gt;
+&lt;li&gt;总线传输周期
+&lt;ul&gt;
+&lt;li&gt;申请分配阶段：主模块申请，总线仲裁决定&lt;/li&gt;
+&lt;li&gt;寻址阶段：主模块向从模块给出地址和命令&lt;/li&gt;
+&lt;li&gt;传数阶段&lt;/li&gt;
+&lt;li&gt;结束阶段&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;^&lt;sup&gt;总线通信的四种方式&lt;/sup&gt;^
+&lt;ul&gt;
+&lt;li&gt;同步通信
+&lt;ul&gt;
+&lt;li&gt;由^&lt;sup&gt;统一时标&lt;/sup&gt;^控制数据传送&lt;/li&gt;
+&lt;li&gt;同步式数据输入
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FSubjects%2Fo3IgnOOjQg.png?alt=media&amp;amp;token=eed7d721-2e89-48f4-96a8-d886d5526615&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FSubjects%2F1N81etIASx.png?alt=media&amp;amp;token=e725e8e0-c702-43af-870c-d77e9f74ad94&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/li&gt;
+&lt;li&gt;最早给出地址信号 最后撤出地址信号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;异步通信
+&lt;ul&gt;
+&lt;li&gt;采用^&lt;sup&gt;应答方式&lt;/sup&gt;^，没有公共时钟标准&lt;/li&gt;
+&lt;li&gt;异步通信
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FSubjects%2FO9R-HO2zv5.png?alt=media&amp;amp;token=902a6363-de76-4aca-887e-06f2190def81&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/li&gt;
+&lt;li&gt;应答机制&lt;/li&gt;
+&lt;li&gt;不互锁&lt;/li&gt;
+&lt;li&gt;半互锁&lt;/li&gt;
+&lt;li&gt;全互锁—TCP网络协议&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;半同步通信
+&lt;ul&gt;
+&lt;li&gt;^&lt;sup&gt;同步，异步结合&lt;/sup&gt;^&lt;/li&gt;
+&lt;li&gt;同步异步结合&lt;/li&gt;
+&lt;li&gt;同步
+&lt;ul&gt;
+&lt;li&gt;发送方使用时钟前沿发信号&lt;/li&gt;
+&lt;li&gt;接收方使用时钟后沿判断识别&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;异步
+&lt;ul&gt;
+&lt;li&gt;允许不同速度的模块同时工作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;通信方式共同点
+&lt;ul&gt;
+&lt;li&gt;主模块发地址和命令 ^&lt;sup&gt;占用总线&lt;/sup&gt;^&lt;/li&gt;
+&lt;li&gt;从模块准备数据 ^&lt;sup&gt;不占用总线&lt;/sup&gt;^&lt;/li&gt;
+&lt;li&gt;送模块向主模块发数据 ^&lt;sup&gt;占用总线&lt;/sup&gt;^&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;分离式通信
+&lt;ul&gt;
+&lt;li&gt;充分^&lt;sup&gt;挖掘&lt;/sup&gt;&lt;sup&gt;系统&lt;/sup&gt;&lt;sup&gt;总线每瞬间的潜力&lt;/sup&gt;^&lt;/li&gt;
+&lt;li&gt;一个总线传输周期
+&lt;ul&gt;
+&lt;li&gt;子周期1 主模块申请占用总线，使用完放弃总线&lt;/li&gt;
+&lt;li&gt;子周期2 从主模块申请占用总线&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;特点：
+&lt;ul&gt;
+&lt;li&gt;各模块有权申请占用总线&lt;/li&gt;
+&lt;li&gt;采用同步通信方式，不占用总线&lt;/li&gt;
+&lt;li&gt;各模块准备数据时，不占用总线&lt;/li&gt;
+&lt;li&gt;总线被占用时，无空闲&lt;/li&gt;
+&lt;li&gt;^&lt;sup&gt;充分发挥了总线的有效占用&lt;/sup&gt;^&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- more --&gt;
 &lt;h2 id=&#34;计算机运算方法6&#34;&gt;计算机运算方法（6）&lt;/h2&gt;
 &lt;!-- more --&gt;

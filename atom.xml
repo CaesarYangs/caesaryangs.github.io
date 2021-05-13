@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://caesaryangs.github.io</id>
     <title>Stories</title>
-    <updated>2021-05-13T08:41:32.393Z</updated>
+    <updated>2021-05-13T08:49:00.653Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://caesaryangs.github.io"/>
     <link rel="self" href="https://caesaryangs.github.io/atom.xml"/>
@@ -131,18 +131,288 @@
 </ul>
 <!-- more -->
 <h2 id="总线">总线</h2>
+<ul>
+<li>重点：</li>
+<li>串行 并行</li>
+<li>片内总线</li>
+<li>^<sup>系统总线</sup>^</li>
+<li>总线的性能指标</li>
+<li>总线结构-分析优劣</li>
+<li></li>
+<li>
+<h3 id="超重点-35总线控制">超重点 ^<sup>3.5总线控制</sup>^</h3>
+<ul>
+<li>从链式查询到控制请求</li>
+<li>根据时序逻辑图解释每一步的计算机处理过程</li>
+</ul>
+</li>
+</ul>
 <!-- more -->
 <h3 id="总线基本概念">总线基本概念</h3>
+<ul>
+<li>总线的意义
+<ul>
+<li>总线是连接各个部件的信息传输线 ^<sup>是各个部件共享的传输介质</sup>^</li>
+</ul>
+</li>
+<li>信息传送
+<ul>
+<li>串行</li>
+<li>并行</li>
+</ul>
+</li>
+<li>总线结构举例
+<ul>
+<li>面向CPU的双总线结构：存储总线+IO总线</li>
+<li>单总线(系统总线)</li>
+<li>以存储器为中心的双总线结构</li>
+</ul>
+</li>
+</ul>
 <!-- more -->
 <h3 id="总线的分类">总线的分类</h3>
+<ul>
+<li>片内总线
+<ul>
+<li>芯片内部总线</li>
+</ul>
+</li>
+<li>^<sup>系统总线</sup>^
+<ul>
+<li>计算机各部件间的信息传输线</li>
+<li>数据总线：双向-与机器字长，存储字长有关——对应MDR</li>
+<li>地址总线：单向-与存储地址，IO地址有关——</li>
+<li>控制总线：有出有入</li>
+</ul>
+</li>
+<li>通信总线
+<ul>
+<li>用于^<sup>计算机系统之间</sup><sup>或</sup><sup>计算机系统与其他系统</sup>^之间的通信</li>
+<li>串行</li>
+<li>并行</li>
+</ul>
+</li>
+</ul>
 <!-- more -->
 <h3 id="总线特性及性能指标">总线特性及性能指标</h3>
+<ul>
+<li>总线物理实现</li>
+<li>总线特性
+<ul>
+<li>机械特性</li>
+<li>电气特性 传输方向和有效的点平范围</li>
+<li>功能特性 每跟传输线的功能</li>
+<li>时间特性 信号的时序关系</li>
+</ul>
+</li>
+<li>总线的性能指标
+<ul>
+<li>总线宽度：数据线的根数</li>
+<li>标准传输率：每秒传输的最大字节数</li>
+<li>时钟同步异步</li>
+<li>总线复用：地址线与数据线复用</li>
+<li>信号线数</li>
+<li>^<sup>总线控制方式：突发、自动、仲裁、逻辑、技术</sup>^</li>
+<li>其他指标：负载能力</li>
+</ul>
+</li>
+<li>总线标准</li>
+</ul>
 <!-- more -->
 <h3 id="总线结构">总线结构</h3>
+<ul>
+<li><strong>单总线结构</strong></li>
+<li>多总线结构
+<ul>
+<li>双总线结构</li>
+<li>三总线结构
+<ul>
+<li>主存总线</li>
+<li>IO总线</li>
+<li>DMA总线：连接主存和高速外设</li>
+<li>另一种结构
+<ul>
+<li>局部总线</li>
+<li>系统总线
+<ul>
+<li>在主存和缓存中交换信息</li>
+</ul>
+</li>
+<li>扩展总线</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>四总线结构</li>
+</ul>
+</li>
+<li>总线举例
+<ul>
+<li>PCI总线
+<ul>
+<li><img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FSubjects%2Fco4maj5LK_.png?alt=media&amp;token=527607d2-32d2-4b19-a657-8c4dfb5226b4" alt="" loading="lazy"></li>
+<li>多层PCI总线结构</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>中大型计算机典型结构：利用通道</li>
+</ul>
 <!-- more -->
 <h3 id="总线控制">总线控制</h3>
+<ul>
+<li>总线判优控制
+<ul>
+<li>
+<ol>
+<li>基本概念</li>
+</ol>
+<ul>
+<li>主设备对总线有^<sup>控制权</sup>^</li>
+<li>^<sup>响应</sup>^从设备相应从主设备发来的总线命令</li>
+<li>^<sup>总线判优控制</sup>^
+<ul>
+<li>^<sup>集中式</sup>^
+<ul>
+<li>链式查询
+<ul>
+<li><img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FSubjects%2FYU9udB-pjY.png?alt=media&amp;token=8f721cab-67f4-41ce-b2d6-c7b55bc7af18" alt="" loading="lazy"></li>
+<li>BS-总线忙  BR-总线请求  BG-总线同意</li>
+<li>问题
+<ul>
+<li>高优先级的设备将一直占用总线导致低优先级的设备无法获取总线使用权</li>
+<li>容错性差</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>计数器定时查询
+<ul>
+<li>BS BR 设备地址线
+<ul>
+<li><img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FSubjects%2FEWA6iszgMs.png?alt=media&amp;token=3d5f359c-28c2-402c-abe1-d8fb51294d81" alt="" loading="lazy"></li>
+<li>优点
+<ul>
+<li>总线控制部件依次向下问询</li>
+<li>容错性较好</li>
+<li>^^优先级不固定 计数器初始值可人为指定 灵活指定优先级^^</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>独立请求方式
+<ul>
+<li>排队器+每个IO接口独立接入总线控制部件</li>
+<li>缺点
+<ul>
+<li>每个IO设备占用两条控制线 成本高</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>分布式</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <!-- more -->
 <h3 id="总线通信控制">总线通信控制</h3>
+<ul>
+<li>总线通信控制
+<ul>
+<li>目的：解决通信双方协调配合的问题</li>
+<li>总线传输周期
+<ul>
+<li>申请分配阶段：主模块申请，总线仲裁决定</li>
+<li>寻址阶段：主模块向从模块给出地址和命令</li>
+<li>传数阶段</li>
+<li>结束阶段</li>
+</ul>
+</li>
+<li>^<sup>总线通信的四种方式</sup>^
+<ul>
+<li>同步通信
+<ul>
+<li>由^<sup>统一时标</sup>^控制数据传送</li>
+<li>同步式数据输入
+<ul>
+<li><img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FSubjects%2Fo3IgnOOjQg.png?alt=media&amp;token=eed7d721-2e89-48f4-96a8-d886d5526615" alt="" loading="lazy"></li>
+<li><img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FSubjects%2F1N81etIASx.png?alt=media&amp;token=e725e8e0-c702-43af-870c-d77e9f74ad94" alt="" loading="lazy"></li>
+<li>最早给出地址信号 最后撤出地址信号</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>异步通信
+<ul>
+<li>采用^<sup>应答方式</sup>^，没有公共时钟标准</li>
+<li>异步通信
+<ul>
+<li><img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FSubjects%2FO9R-HO2zv5.png?alt=media&amp;token=902a6363-de76-4aca-887e-06f2190def81" alt="" loading="lazy"></li>
+<li>应答机制</li>
+<li>不互锁</li>
+<li>半互锁</li>
+<li>全互锁—TCP网络协议</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>半同步通信
+<ul>
+<li>^<sup>同步，异步结合</sup>^</li>
+<li>同步异步结合</li>
+<li>同步
+<ul>
+<li>发送方使用时钟前沿发信号</li>
+<li>接收方使用时钟后沿判断识别</li>
+</ul>
+</li>
+<li>异步
+<ul>
+<li>允许不同速度的模块同时工作</li>
+</ul>
+</li>
+<li>通信方式共同点
+<ul>
+<li>主模块发地址和命令 ^<sup>占用总线</sup>^</li>
+<li>从模块准备数据 ^<sup>不占用总线</sup>^</li>
+<li>送模块向主模块发数据 ^<sup>占用总线</sup>^</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>分离式通信
+<ul>
+<li>充分^<sup>挖掘</sup><sup>系统</sup><sup>总线每瞬间的潜力</sup>^</li>
+<li>一个总线传输周期
+<ul>
+<li>子周期1 主模块申请占用总线，使用完放弃总线</li>
+<li>子周期2 从主模块申请占用总线</li>
+</ul>
+</li>
+<li>特点：
+<ul>
+<li>各模块有权申请占用总线</li>
+<li>采用同步通信方式，不占用总线</li>
+<li>各模块准备数据时，不占用总线</li>
+<li>总线被占用时，无空闲</li>
+<li>^<sup>充分发挥了总线的有效占用</sup>^</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <!-- more -->
 <h2 id="计算机运算方法6">计算机运算方法（6）</h2>
 <!-- more -->
