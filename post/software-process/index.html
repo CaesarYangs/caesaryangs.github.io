@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#2e5c6e">
-<title>Stories</title>
+<title>软件过程 | Stories</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1623240072116">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -38,6 +38,8 @@
 
 
 
+  <meta name="description" content="软件过程" />
+  <meta name="keywords" content="Software Engineering Concept" />
 </head>
 
 <body>
@@ -183,10 +185,26 @@
   <div class="main-continer">
     
     <div
-      class="section-layout  pisces">
+      class="section-layout pisces ">
       <div class="section-layout-wrapper">
-        <div id="sidebarMeta" class="sidebar">
-    
+        
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active language" data-lan="index">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item language" data-lan="preview">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body pisces" id="sidebar_body">
+        
+          
+            <div class="post-side-meta" id="post_side_meta">
+              
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -229,64 +247,632 @@
 
 
 </div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper auto-number auto"
+    id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E8%BF%87%E7%A8%8B%E6%A8%A1%E5%9E%8B">过程模型</a>
+<ul>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E8%BF%87%E7%A8%8B%E6%A8%A1%E5%9E%8B">软件过程模型</a></li>
+<li><a href="#%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B-the-waterfall-model">瀑布模型 The waterfall model</a></li>
+<li><a href="#%E8%BF%9B%E5%8C%96%E5%BC%8F%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F-evolutionary-development">进化式开发模式 Evolutionary development</a></li>
+<li><a href="#%E5%9F%BA%E4%BA%8E%E6%9E%84%E4%BB%B6%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F-component-based-software-engineering">基于构件的软件工程（开发模式）  Component-based software engineering</a></li>
+</ul>
+</li>
+<li><a href="#%E8%BF%87%E7%A8%8B%E8%BF%AD%E4%BB%A3">过程迭代</a>
+<ul>
+<li><a href="#%E5%A2%9E%E9%87%8F%E5%BC%8F%E5%BC%80%E5%8F%91incremental-delivery">增量式开发（Incremental delivery）</a></li>
+<li><a href="#%E8%9E%BA%E6%97%8B%E5%BC%8F%E5%BC%80%E5%8F%91spiral-development">螺旋式开发（Spiral development）</a></li>
+</ul>
+</li>
+<li><a href="#%E8%BF%87%E7%A8%8B%E6%B4%BB%E5%8A%A8">过程活动</a>
+<ul>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E6%8F%8F%E8%BF%B0">软件描述</a></li>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0">软件设计与实现</a></li>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E6%9C%89%E6%95%88%E6%80%A7%E9%AA%8C%E8%AF%81">软件有效性验证</a></li>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E8%BF%9B%E5%8C%96">软件进化</a></li>
+</ul>
+</li>
+<li><a href="#%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6%E8%BF%87%E7%A8%8B%E5%8F%8A%E8%BF%87%E7%A8%8B%E6%A8%A1%E5%9E%8B">应用软件过程及过程模型</a>
+<ul>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%98%AF%E4%B8%80%E7%A7%8D%E5%B1%82%E6%AC%A1%E5%8C%96%E6%8A%80%E6%9C%AF">软件工程是一种层次化技术</a></li>
+</ul>
+</li>
+<li><a href="#rup-rational-unified-process-%E7%BB%9F%E4%B8%80%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B">RUP Rational Unified Process 统一软件开发过程</a>
+<ul>
+<li><a href="#%E6%A8%A1%E5%9E%8B">模型</a></li>
+<li><a href="#%E4%BA%A7%E5%93%81%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E4%B8%AD%E7%9A%84%E6%8C%87%E5%AF%BC%E6%96%B9%E9%92%88%E5%92%8C%E6%A8%A1%E6%9D%BF">产品生命周期中的指导方针和模板</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
 </div>
+
 <script>
-  let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'pisces';
-  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
-  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
-    document.addEventListener('scroll', function(e) {
-      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
-        sidebarWrapper.classList.add('home-sidebar-fixed')
-      } else {
-        sidebarWrapper.classList.remove('home-sidebar-fixed')
+
+  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
+  let active = 'active-show', activeClass = 'active-current';
+  let tocWrapper = document.querySelector('#toc_wrapper');
+  let tocContent = tocWrapper.children[0];
+  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
+
+  function addTocNumber(elem, deep) {
+    if (!elem) {
+      return;
+    }
+    let prop = elem.__proto__;
+
+    if (prop === HTMLUListElement.prototype) {
+      for (let i = 0; i < elem.children.length; i++) {
+        addTocNumber(elem.children[i], deep + (i + 1) + '.');
       }
+    } else if (prop === HTMLLIElement.prototype) {
+      // 保存li元素
+      if (elem.children[0] && elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
+        lList.push(elem);
+      }
+      for (let i = 0; i < elem.children.length; i++) {
+        let cur = elem.children[i];
+        if (cur.__proto__ === HTMLAnchorElement.prototype) {
+          if (autoNumber) {
+            cur.text = deep + ' ' + cur.text;
+          }
+        } else if (cur.__proto__ === HTMLUListElement.prototype) {
+          addTocNumber(cur, deep);
+        }
+      }
+    }
+  }
+
+  function removeParentActiveClass() {
+    let parents = tocContent.querySelectorAll('.' + active)
+    parents.forEach(function (elem) {
+      elem.classList.remove(active);
     });
   }
-  </script>
-        <div class="section-box tag-line box-shadow-wrapper">
-          <section class="section tags-section posts-expand bg-color">
-            <div class="padding-wrapper">
-  <div class="tag-timeline-box">
-    <div class="tag-timeline-wrapper">
-      <div class="tag-timeline-title">
-        <h2>
-          Gridea
-          <small class="language" data-lan="tag">标签</small>
-        </h2>
+
+  function addActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.add(activeClass);
+    }
+  }
+
+  function removeActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.remove(activeClass);
+    }
+  }
+
+  function addActiveLiElemment(elem, parent) {
+    if (!elem || elem === parent) {
+      return;
+    } else {
+      if (elem.__proto__ === HTMLLIElement.prototype) {
+        elem.classList.add(active);
+      }
+      addActiveLiElemment(elem.parentElement, parent);
+    }
+  }
+
+  function showToc() {
+    if (tocWrapper) {
+      postBody = document.querySelector('#post_body');
+      for (let i = 0; i < postBody.children.length; i++) {
+        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+          hList.push(postBody.children[i]);
+        }
+      }
+      if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+      } else if (tocWrapper.classList.contains('no_compress')) {
+        tocContent.classList.add('expanded');
+      } else {
+        if (hList.length > 10) {
+          active = 'active-hidden'
+          tocContent.classList.add('closed');
+        } else {
+          tocContent.classList.add('expanded');
+        }
+      }
+    }
+  }
+
+  (function () {
+    // 处理不是从#一级标题开始目录
+    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
+      let con = tocContent.children[0].children[0];
+      tocContent.innerHTML = con.innerHTML;
+    }
+    let markdownItTOC = document.querySelector('.markdownIt-TOC');
+    let innerHeight = window.innerHeight;
+    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
+    addTocNumber(tocContent, '');
+  })();
+
+  document.addEventListener('scroll', function (e) {
+    if (lList.length <= 0) {
+      return;
+    }
+    let scrollTop = document.scrollingElement.scrollTop + 10;
+    let dir;
+
+    if (lastTop - scrollTop > 0) {
+      dir = 'up';
+    } else {
+      dir = 'down';
+    }
+
+    lastTop = scrollTop;
+    if (scrollTop <= 0) {
+      if (lastIndex >= 0 && lastIndex < hList.length) {
+        lList[lastIndex].classList.remove(activeClass);
+      }
+      return;
+    }
+
+    let current = 0, hasFind = false;
+    for (let i = 0; i < hList.length; i++) {
+      if (hList[i].offsetTop > scrollTop) {
+        current = i;
+        hasFind = true;
+        break;
+      }
+    }
+    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+      current = hList.length - 1;
+    } else {
+      current--;
+    }
+    if (dir === 'down') {
+      if (current > lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex)
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    } else {
+      if (current < lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex);
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    }
+  });
+
+
+  window.addEventListener('load', function () {
+    showToc();
+    document.querySelector('#sidebar').style = 'display: block;';
+    tocWrapper.classList.add('toc-active');
+    setTimeout(function () {
+      if ("createEvent" in document) {
+        let evt = document.createEvent("HTMLEvents");
+        evt.initEvent("scroll", false, true);
+        document.dispatchEvent(evt);
+      }
+      else {
+        document.fireEvent("scroll");
+      }
+    }, 500)
+  })
+
+</script>
+            </div>
+          
+        
       </div>
+    </div>
+  
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <section class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://caesaryangs.github.io/post/software-process/">
+      软件过程
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span class="publish-time" data-t="2021-06-09 19:46:09">2021-06-09</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show language" data-lan="category-in">分类于</span>
       
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <a href="https://caesaryangs.github.io/post/hello-gridea/">
-        <div class="motion-warpper">
-          <div class="tag-post-node">
-            <h1>
-              12-12
-              <small>Hello Gridea</small>
-            </h1>
-          </div>
-        </div>
+      <a href="https://caesaryangs.github.io/tag/aCS9aRihI/">
+        <span>Software Engineering Concept</span>
       </a>
       
       
+    </span>
+    <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>11<span class="language" data-lan="minute">分钟</span></span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>3147<span class="pc-show language" data-lan="words">字数</span></span>
+    </span>
+    
+  </div>
+</section>
+            <div class="post-body next-md-body" id="post_body">
+              <p>本文隶属于软件工程学习流程中。<br>
+&quot;将系统化的、规范的、可度量的方法用于软件的开发、运行和维护的过程，即将工程化应用于软件开发中&quot;。</p>
+<hr>
+<!-- more -->
+<h2 id="过程模型">过程模型</h2>
+<ul>
+<li>定义：是软件过程的抽象表示，有时叫做过程范例<br>
+指的是一种包含过程本身，方法和工具的策略集合，其目的是有效的管理和交付软件产品</li>
+<li><strong>四个基本活动：软件描述+软件设计和实验+软件有效性验证+软件进化</strong></li>
+</ul>
+<h3 id="软件过程模型">软件过程模型</h3>
+<p>过程定义了：<strong>谁</strong>在<strong>做什么</strong>, 什么<strong>时间</strong>, 如何达到<strong>既定目标</strong><br>
+过程的选择：根据项目的具体性质；开发方法和工具的选择；其它约束条件</p>
+<h3 id="瀑布模型-the-waterfall-model">瀑布模型 The waterfall model</h3>
+<p>将软件开发过程（需求描述和系统开发）进行清晰的阶段划分，将描述系统开发。</p>
+<ul>
+<li>瀑布式开发框架<br>
+[image:1223FBFB-9C0C-4E9B-99EC-B577AD89EC93-19154-00003F2CB42B7BA6/截屏2021-06-09 下午4.53.44.png]</li>
+<li>特点：</li>
+<li>将项目硬生生分解为确切的阶段。委托事项在过程早期阶段清晰给出。很难响应用户需求的变更</li>
+<li>仅适用于当需求较为清晰，且需求相对稳定的情况下。</li>
+<li>大型项目中，异地协同开发时也较为适用。</li>
+</ul>
+<h3 id="进化式开发模式-evolutionary-development">进化式开发模式 Evolutionary development</h3>
+<p>系统开发各个阶段没有清晰的界限，描述、开发、验证的工作交替进行。</p>
+<ul>
+<li>探索式开发
+<ul>
+<li>与用户一起工作，共同探索系统需求，直至最后交付系统。</li>
+<li>开发是从需求较为清晰的部分开始，根据用户的建议逐渐向系统中添加功能。</li>
+</ul>
+</li>
+<li>抛弃式原形
+<ul>
+<li>其目的是理解用户需求，然后再给出系统的一个较好的需求定义。</li>
+<li>原型着重对客户需求理解较差的那部分的实验。</li>
+</ul>
+</li>
+<li>进化式开发框架：<br>
+[image:475BA5EF-99E0-4396-B78C-9AD26C5CE9BC-19154-00003F72BCB4A9B0/截屏2021-06-09 下午4.58.42.png]
+<ul>
+<li>问题
+<ul>
+<li>缺少过程的可见性：项目管理通常情况是靠经验来把握进度；</li>
+<li>系统结构较差：由于频繁的变更，结构比较脆弱</li>
+<li>需要额外的技术 (如原型设计技术等)</li>
+</ul>
+</li>
+<li>应用
+<ul>
+<li>小型或中型系统，可采用进化式开发方法</li>
+<li>大型系统中采用混合开发模式。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>特点：
+<ol>
+<li>提高系统的可用性</li>
+<li>更加贴切用户的需求</li>
+<li>提升设计质量</li>
+<li>提高可维护性</li>
+<li>降低开发成本</li>
+</ol>
+</li>
+</ul>
+<h3 id="基于构件的软件工程开发模式-component-based-software-engineering">基于构件的软件工程（开发模式）  Component-based software engineering</h3>
+<p>系统是基于已经存在的构件（组件）采用组装模式开发。</p>
+<ul>
+<li>基于重用的系统集成开发<br>
+已经存在的构件；市场上提供的服务构件</li>
+</ul>
+<ul>
+<li>过程阶段：<br>
+组件分析；需求修改；基于重用的系统设计；开发和集成.</li>
+</ul>
+<!-- more -->
+<h2 id="过程迭代">过程迭代</h2>
+<p>当需求变更无法避免时，过程活动就会有规律的重复进行，这种开发我们称之为：“迭代开发过程”。<br>
+两个典型的迭代过程应用模型：</p>
+<h3 id="增量式开发incremental-delivery">增量式开发（Incremental delivery）</h3>
+<p>区别于瀑布式开发的单一提交，增量式开发将需求分解成很多小的增量，每个增量对应每一部分的需求<br>
+增量不分优先级<br>
+要求：一旦增量开始启动，则该增量的需求就处于冻结状态，不允许进行变更。<br>
+难度：增量的规模应该相对较小，（原则上不超过20000代码行），每个增量包含一定的系统功能。大多数系统需要一组基本服务。该基本服务在系统的许多地方都可以使用。</p>
+<ul>
+<li>增量式开发过程框架：<br>
+[image:EBBA1DBF-DD29-4689-9F21-EBE4E85EFF63-19154-00004226B2E90D8E/截屏2021-06-09 下午7.18.10.png]</li>
+<li>特点：
+<ul>
+<li>客户无需等到整个系统的实现。<br>
+• 早期的增量同时担当了后续需求的原型<br>
+• 项目总体失败的风险比较低。<br>
+• 高优先级的增量会得到全面的测试。</li>
+</ul>
+</li>
+</ul>
+<h3 id="螺旋式开发spiral-development">螺旋式开发（Spiral development）</h3>
+<ul>
+<li>螺旋式开发过程图：<br>
+[image:459A703D-D828-482B-BB2B-68760636E59D-19154-00004243481C9B6D/截屏2021-06-09 下午7.20.13.png]</li>
+<li>扇区：
+<ul>
+<li>目标设置<br>
+为项目的这个阶段定义专门目标。制定对过程和产品的约束，而且制定详细的管理计划。<br>
+• 风险评估和规避<br>
+分析项目风险，根据这些风险规避的策略方案。<br>
+每一个项目风险确定以后要进行详细的分析，并采取措施规避这些风险。<br>
+• 开发和有效性验证<br>
+在风险预估以后，为系统选择开发模型<br>
+进行开发，并进行各个阶段的验证<br>
+• 规划<br>
+对项目进行评审以确定是否需要进入螺旋线的下一个回路。如果决定继续，就要做出项目的下个阶段计划。</li>
+</ul>
+</li>
+</ul>
+<!-- more -->
+<h2 id="过程活动">过程活动</h2>
+<h3 id="软件描述">软件描述</h3>
+<p>主要是理解并定义系统需要哪些服务以及找出开发和运行期间的约束条件。</p>
+<ul>
+<li>软件需求过程<br>
+软件可行性研究；需求的抽取和分析；需求描述；需求有效性验证.</li>
+</ul>
+<h3 id="软件设计与实现">软件设计与实现</h3>
+<p><strong>软件开发的实现阶段是把系统描述转换成一个可运行的系统的过程.</strong></p>
+<ul>
+<li>软件设计：软件设计是对实现软件的结构、系统的数据、系统组件间的接口以及所用的算法的描述</li>
+<li>实现：将设计内容“翻译”为一个可执行程序的过程</li>
+<li>设计与实现是相互独立，而其中又有着千丝万缕的关系。</li>
+<li>软件设计过程图：<br>
+[image:A52A02CA-9F94-4298-A5D8-508C8F897AF5-19154-00004296498F4830/截屏2021-06-09 下午7.26.11.png]</li>
+</ul>
+<ul>
+<li><strong>编程与调试</strong>
+<ul>
+<li>将设计内容“翻译”成一段程序代码，并去除错误的过程</li>
+<li>调试——一个诊断的过程</li>
+</ul>
+</li>
+</ul>
+<h3 id="软件有效性验证">软件有效性验证</h3>
+<ul>
+<li><strong>Verification and validation (V &amp; V) 的目的是在于验证系统实现了系统需求，同时该系统需求和用户的期望是相符的</strong></li>
+<li>组件（或单元）测试<br>
+测试单个的组件，以确保其操作的正确性。<br>
+独立测试每个组件，而不受其他组件的影响</li>
+<li>系统测试<br>
+组件得以集成形成系统。<br>
+侧重找出组件间非预期的交互行为和接口问题</li>
+<li>验收测试<br>
+用户参与进行的测试<br>
+在运行前的最后阶段测试<br>
+一般用用户提供的真实数据进行测试。</li>
+</ul>
+<h3 id="软件进化">软件进化</h3>
+<ul>
+<li>软件需要具备灵活性。</li>
+<li>Build-Fix的开发模式已经不存在了，软件维护和软件开发的界限也越来越模糊了</li>
+</ul>
+<!-- more -->
+<h2 id="应用软件过程及过程模型">应用软件过程及过程模型</h2>
+<h3 id="软件工程是一种层次化技术">软件工程是一种层次化技术</h3>
+<ul>
+<li>从实践角度如何理解过程模型<br>
+瀑布式模型Vs.通用过程框架<br>
+增量开发 Vs. 通用框架</li>
+</ul>
+<h2 id="rup-rational-unified-process-统一软件开发过程">RUP Rational Unified Process 统一软件开发过程</h2>
+<ul>
+<li>RUP是现代过程模型的一个实例</li>
+<li>RUP描述了如何有效地利用商业的可靠的方法开发和部署软件，是一种重量级过程（也被称作厚方法学），因此特别适用于大型软件团队开发大型项目。<br>
+在软件工程领域，与RUP齐名的软件方法还有：</li>
+</ul>
+<ul>
+<li><a href="https://zh.wikipedia.org/w/index.php?title=%E5%87%80%E5%AE%A4%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B&amp;action=edit&amp;redlink=1">净室软件工程</a> （重量级）、 <a href="https://zh.wikipedia.org/wiki/CMMI">CMMI</a> （重量级）</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B">极限编程</a> （extreme programming）和其他 <a href="https://zh.wikipedia.org/wiki/%E6%95%8F%E6%8D%B7%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91">敏捷软件开发</a> （agile methodology）方法学（轻量级）</li>
+</ul>
+<ul>
+<li>三个视角<br>
+动态视角：给出模型随时间所经历的各个阶段;<br>
+静态视角：给出所规定的过程活动;<br>
+实践视角：建议在过程中采用的好的实践示例.</li>
+</ul>
+<h3 id="模型">模型</h3>
+<ul>
+<li>先启阶段<br>
+建立系统的业务案例。识别所有与系统交互的外部实体并定义这些交互。</li>
+</ul>
+<ul>
+<li>精化阶段<br>
+增进对问题域的理解，建立系统的体系架构<br>
+给出项目计划，及风险的识别</li>
+<li>构造<br>
+进行系统的设计、编程以及测试.</li>
+<li>转换<br>
+完成系统的部署。</li>
+</ul>
+<h3 id="产品生命周期中的指导方针和模板">产品生命周期中的指导方针和模板</h3>
+<p>RUP为项目成员定义了在一个产品生命周期中如下指导方针和模板。<br>
+<strong>迭代式开发</strong>给定的时间内，开发一个大型的复杂的软件系统，定义问题并构建解决方案是不可能一蹴而就的。在项目的开发过程中，由于体系结构方面的约束，客户的需要或对原始问题更精确的理解，需求会经常地变更。迭代式开发允许通过后续的细化产生对项目更好的理解，并在每个迭代的阶段，把项目的最高风险的事项作为最高优先级的任务集中精力解决。理想的，每一次迭代都以一个可执行的发布为结束，这样可以减少一个项目风险，更多地允许客户的交互并帮助开发人员集中精力。</p>
+<p><strong>管理需求</strong>对于任何大型项目来说，一个文档框架是必不可少的；因此RUP描述了如何描述功能性，约束，设计决定和业务需求。<br>
+用例和场景是过程规定的制品的例子，在贯穿系统整个开发和部署的过程中，用例和场景在捕捉功能需求和提供一致的线索上是非常有效的。</p>
+<p><strong>使用基于构件的体系架构</strong>基于构件的体系架构（CBA）创造了容易扩展的系统，并提升了软件的重用性和可读性。一个构件经常与 <a href="https://zh.wikipedia.org/wiki/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1">面向对象程序设计</a> 中的一个对象有关。<br>
+RUP提供了构建这种系统的一个系统化的方法，关注于在把所有资源投入到一个项目之前，开发出一个早期的可执行的体系架构。<br>
+这些构件通过一些基础平台，如 <a href="https://zh.wikipedia.org/wiki/CORBA">CORBA</a> 和 <a href="https://zh.wikipedia.org/w/index.php?title=Component_object_model&amp;action=edit&amp;redlink=1">COM</a> 组装在一起。</p>
+<p><strong>软件的可视化建模</strong>将你的程序设计从代码上抽象出来，并用图形化构件块展现出来是得到解决方案的全面意象的一种有效方法。这对于项目的技术人员来说，一方面，能够更容易地勾画出如何最好的实现一个给定逻辑集合的轮廓，另一方面，能够更容易地构造在业务过程和实现业务过程的实际代码之间的中间物。<br>
+<strong>验证软件品質</strong>品質评估是所有软件项目中最经常的失败所在，因为通常这样项目的仅仅在项目总结中进行质量评估和甚至由另外的团队来进行品質评估。 RUP在规划品質控制和评估方面有所帮助，并把品質控制和评估包括在每个项目成员都参与的整个过程中。</p>
+<p><strong>控制软件的变更</strong>在所有的软件项目中，变更是不可避免的，RUP定义了控制和监控变更的方法。一个表面上很小的变更可能以完全不可预计的方式对应用程序产生影响，这一点对一个成功项目至关重要。RUP同时定义了<em>安全的操作环境</em>，保证一个程序员对另一个系统的修改将不会对他系统地修改。这一点与基于构件的体系架构有很大的关系。<br>
+迄今为止，这些指导方针是通用的，可以在一个项目的生命周期中遵守。为了把握一个项目的时间尺度，RUP把一个项目分为四个不同的阶段：</p>
+<ol>
+<li>构思阶段 ：包括用户沟通和计划活动两个方面，强调定义和细化用例，并将其作为主要模型。</li>
+<li>细化阶段 ：包括用户沟通和建模活动，重点是创建分析和设计模型，强调类的定义和体系结构的表示。</li>
+<li>构建阶段 ：将设计转化为实现，并进行集成和测试。</li>
+<li>移交阶段 ：将产品发布给用户进行测试评价，并收集用户的意见，之后再次进行迭代修改产品使之完善。</li>
+</ol>
+
+            </div>
+            
+            
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong class="language" data-lan="author">本文作者：</strong>
+      Caesar Yang
+    </li>
+    <li class="post-copyright-link">
+      <strong class="language" data-lan="link">本文链接：</strong>
+      <a href="https://caesaryangs.github.io/post/software-process/" title="软件过程">https://caesaryangs.github.io/post/software-process/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong class="language" data-lan="copyright">版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://caesaryangs.github.io/tag/aCS9aRihI/"># Software Engineering Concept</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="数据库原理课程笔记" href="https://caesaryangs.github.io/post/shu-ju-ku-yuan-li-ke-cheng-bi-ji/">数据库原理课程笔记</a>
+        <a class="nav-mobile-next" title="数据库原理课程笔记" href="https://caesaryangs.github.io/post/shu-ju-ku-yuan-li-ke-cheng-bi-ji/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>
 </div>
-          </section>
+            
+            
+  
+    
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+  gitalk.render('gitalk-container')
+</script>
+    
+    
+  
+
+          </div>
         </div>
       </div>
     </div>
@@ -493,6 +1079,223 @@
     parent.insertBefore(aelem, next);
   })
 </script>
+    <div class="reward-mask" style="display: none;">
+  <div class="reward-relative">
+    <span class="close" aria-hidden="true">x</span>
+    <div class="reward-body">
+      <h2>感谢您的支持，我会继续努力的!</h2>
+      <div class="reward-img-box">
+        <div style="position: relative; width: 140px; height: 140px;">
+          
+          
+          
+        </div>
+      </div>
+      <p class="reward-word">扫码打赏，你说多少就多少</p>
+      <p class="reward-tip">打开微信扫一扫，即可进行扫码打赏哦</p>
+    </div>
+    <div class="bottom">
+      
+      
+    </div>
+  </div>
+</div>
+<style>
+  .reward-mask {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000054;
+  }
+
+  .reward-relative {
+    position: relative;
+    width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #fff;
+    top: 50%;
+    margin-top: -205px;
+  }
+
+  .reward-relative .close {
+    position: absolute;
+    right: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #929292;
+  }
+
+  .reward-body {
+    padding: 40px 20px 20px;
+  }
+
+  .bottom {
+    display: flex;
+  }
+
+  .reward-btn {
+    text-align: center;
+  }
+
+  .reward-btn-text {
+    display: inline-block;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #ff9734;
+    color: #FFF;
+    margin-top: 20px;
+  }
+
+  .pay-text {
+    margin-top: 10px;
+    padding: 10px;
+    flex: 1;
+    transition: all .2s linear;
+  }
+
+  .pay-text:hover {
+    background-color: #a5a5a536;
+  }
+
+  .reward-body h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 20px;
+  }
+
+  .reward-body h2:after,
+  .reward-body h2:before {
+    font-family: Arial, Helvetica, sans-serif;
+    background: 0 0;
+    width: 0;
+    height: 0;
+    font-style: normal;
+    color: #eee;
+    font-size: 80px;
+    position: absolute;
+    top: 20px;
+  }
+
+  .reward-body h2:before {
+    content: '\201c';
+    left: 50px;
+  }
+
+  .reward-body h2:after {
+    content: '\201d';
+    right: 80px;
+  }
+
+  .reward-img-box {
+    display: inline-block;
+    padding: 10px;
+    border: 6px solid #ea5f00;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .reward-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 767px) {
+    .reward-relative {
+      height: 100%;
+      top: 0px;
+      margin-top: 0;
+      width: auto;
+    }
+
+    .reward-relative .bottom {
+      flex-direction: column;
+    }
+
+    .reward-relative .pay-text {
+      width: 80%;
+      margin: 5px auto;
+      border: 1px solid silver;
+      padding: 6px;
+      border-radius: 4px;
+    }
+
+    .reward-body h2:after {
+      right: 40px;
+    }
+
+    .reward-body h2:after,
+    .reward-body h2:before {
+      font-size: 60px;
+    }
+
+    .reward-body h2:before {
+      left: 20px;
+    }
+  }
+</style>
+<script>
+  !function () {
+    var mask = document.querySelector('.reward-mask');
+    let close = document.querySelector('.reward-relative .close');
+    let rewardBtn = document.querySelector('.reward-btn');
+
+    let zfb = document.querySelector('#zfb'),
+      wx = document.querySelector('#wx'),
+      zfbBtn = document.querySelector('#zfbBtn'),
+      wxBtn = document.querySelector('#wxBtn');
+
+    if (zfbBtn && wxBtn) {
+      zfbBtn.addEventListener('click', () => {
+        window.Velocity(zfb, 'transition.slideLeftIn', {
+          duration: 400
+        });
+        window.Velocity(wx, 'transition.slideRightOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+
+      wxBtn.addEventListener('click', () => {
+        window.Velocity(wx, 'transition.slideRightIn', {
+          duration: 400
+        });
+        window.Velocity(zfb, 'transition.slideLeftOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+    }
+
+    rewardBtn.addEventListener('click', (e) => {
+      window.Velocity(mask, 'transition.slideDownIn', {
+        duration: 400
+      })
+    });
+
+    close.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.Velocity(mask, 'transition.slideUpOut', {
+        duration: 400
+      })
+    })
+  }()
+</script>
+
   </div>
 </body>
 
@@ -1740,7 +2543,6 @@ RUP提供了构建这种系统的一个系统化的方法，关注于在把所�
     speed: 200
   });
 </script>
-
 
 
 
