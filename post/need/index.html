@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#2e5c6e">
-<title>Hello Gridea | Stories</title>
+<title>需求分析 | Stories</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1623507993273">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -38,8 +38,8 @@
 
 
 
-  <meta name="description" content="Hello Gridea" />
-  <meta name="keywords" content="Gridea" />
+  <meta name="description" content="需求分析" />
+  <meta name="keywords" content="Software Engineering Concept" />
 </head>
 
 <body>
@@ -253,9 +253,31 @@
   <div class="toc-wrapper auto-number auto"
     id="toc_wrapper">
     <ul class="markdownIt-TOC">
-<li>
+<li><a href="#%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90">需求分析</a>
 <ul>
-<li><a href="#%E7%89%B9%E6%80%A7">特性👇</a></li>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E9%9C%80%E6%B1%82%E9%9C%80%E6%B1%82%E5%B7%A5%E7%A8%8B">软件需求&amp;需求工程</a>
+<ul>
+<li><a href="#%E9%9C%80%E6%B1%82%E5%B7%A5%E7%A8%8B">需求工程</a></li>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E9%9C%80%E6%B1%82">软件需求</a></li>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E9%9C%80%E6%B1%82%E7%B1%BB%E5%9E%8B">软件需求类型</a></li>
+<li><a href="#%E7%9B%AE%E6%A0%87%E5%92%8C%E9%9C%80%E6%B1%82">目标和需求</a></li>
+</ul>
+</li>
+<li><a href="#%E9%9C%80%E6%B1%82%E8%8E%B7%E5%8F%96%E5%8F%8A%E6%8F%8F%E8%BF%B0%E6%96%B9%E6%B3%95">需求获取及描述方法</a>
+<ul>
+<li><a href="#%E8%8E%B7%E5%8F%96%E7%B3%BB%E7%BB%9F%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF">获取系统用户信息</a></li>
+<li><a href="#%E8%BF%9B%E8%A1%8C%E9%9C%80%E6%B1%82%E8%8E%B7%E5%8F%96">进行需求获取</a></li>
+<li><a href="#%E5%AE%9A%E4%B9%89%E9%9C%80%E6%B1%82">定义需求</a></li>
+</ul>
+</li>
+<li><a href="#%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95%E5%BB%BA%E6%A8%A1">需求分析方法（建模）</a>
+<ul>
+<li><a href="#%E6%95%B4%E4%BD%93%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E8%BF%87%E7%A8%8B%E5%8F%8A%E6%96%B9%E6%B3%95%E6%A6%82%E8%BF%B0">整体需求分析过程及方法概述：</a></li>
+<li><a href="#%E7%BB%93%E6%9E%84%E5%8C%96%E6%96%B9%E6%B3%95">结构化方法</a></li>
+<li><a href="#uml%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80">UML统一建模语言</a></li>
+<li><a href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95">面向对象分析方法</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -523,8 +545,8 @@
           <div class="section bg-color post post-page">
             <section class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://caesaryangs.github.io/post/hello-gridea/">
-      Hello Gridea
+    <a class="post-title-link" href="https://caesaryangs.github.io/post/need/">
+      需求分析
     </a>
   </h1>
   <div class="post-meta">
@@ -532,7 +554,7 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span class="language" data-lan="publish">发布于</span>
-      <span class="publish-time" data-t="2018-12-12 00:00:00">2018-12-12</span>
+      <span class="publish-time" data-t="2021-06-12 22:20:30">2021-06-12</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
@@ -541,8 +563,8 @@
       <span class="pc-show language" data-lan="category-in">分类于</span>
       
       
-      <a href="https://caesaryangs.github.io/tag/vuHOgsrte/">
-        <span>Gridea</span>
+      <a href="https://caesaryangs.github.io/tag/aCS9aRihI/">
+        <span>Software Engineering Concept</span>
       </a>
       
       
@@ -551,38 +573,255 @@
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>2<span class="language" data-lan="minute">分钟</span></span>
+      <span>9<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>298<span class="pc-show language" data-lan="words">字数</span></span>
+      <span>2390<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
   </div>
 </section>
             <div class="post-body next-md-body" id="post_body">
-              <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+              <h1 id="需求分析">需求分析</h1>
+<p>#软件工程导论#</p>
+<ul>
+<li>什么是一个好的软件产品<br>
+质量：以往的观点<br>
+满足需求文档 通过系统测试 遵循开发过程<br>
+质量：现在的要求<br>
+理解全部<strong>涉众</strong>的需要 对所有开发产物进行持续质量检测</li>
+</ul>
+<hr>
+<h2 id="软件需求需求工程">软件需求&amp;需求工程</h2>
+<h3 id="需求工程">需求工程</h3>
+<ul>
+<li>定义：理解并定义系统需要哪些<strong>服务</strong>以及找出开发和运行期间受到哪些<strong>约束</strong>的过程</li>
+<li>目的：用最小的代价在尽可能短的时间里确定该软件项目是否能够开发，是否值得去开发<br>
+开发风险，资源有效性，技术水平，开发人员评估能力<br>
+开发成本估算<br>
+知识产权评估，社会责任评估</li>
+</ul>
+<h3 id="软件需求">软件需求</h3>
+<p><strong>输入+功能+非功能性需求+设计约束+输出</strong></p>
+<ul>
+<li>目标=&gt;商业需求：系统特性</li>
+<li>任务=&gt;用户需求：问题域<br>
+用自然语言加图标给出的关于系统需要提供哪些服务以及系统操作收到哪些约束的声明</li>
+<li>系统行为=&gt;系统需求：需求分析模型<br>
+详细地给出系统要提供的服务以及系统所受到的约束 经常作为合同双方附件内容</li>
+</ul>
+<h3 id="软件需求类型">软件需求类型</h3>
+<ul>
+<li>功能需求<br>
+系统应该提供的服务，如何对输入作出反应以及系统在特定条件下的行为描述<br>
+明确系统不应该做什么</li>
+<li>非功能需求<br>
+对系统提供的服务或功能给出的约束<br>
+时间约束 开发过程约束 标准
+<ul>
+<li>与产品相关的非功能需求—不直接与系统具体功能相关的需求<br>
+可靠性 时间响应及储存 IO能力</li>
+<li>与过程相关的非功能需求<br>
+对质量标准的描述 CASE工具的约束等</li>
+<li><strong>非功能需求也许比功能需求更加关键，如果非功能需求满足不了，系统可能无用</strong></li>
+</ul>
+</li>
+<li>领域需求<br>
+来自系统的应用领域的需求，反映该领域的特点<br>
+可为功能性需求或非功能性需求</li>
+<li>产品需求<br>
+叙述产品行为的需求</li>
+<li>组织结构需求<br>
+客户所在机构和开发者所在机构中的政策需求和规定。过程标准，实现要求交付要求等。</li>
+<li>外部需求<br>
+包括所有系统外部因素和开发过程。<br>
+互操作需求；法律需求；道德需求</li>
+</ul>
+<h3 id="目标和需求">目标和需求</h3>
+<ul>
+<li>非功能需求难点在于描述的准确性造成了其验证的难度</li>
+<li>尽量将目标转化为可检验的非功能性需求</li>
+<li><strong>即：只要有可能就应该对需求加以量化，保证它的可验证性</strong></li>
+</ul>
+<hr>
+<h2 id="需求获取及描述方法">需求获取及描述方法</h2>
+<h3 id="获取系统用户信息">获取系统用户信息</h3>
+<h3 id="进行需求获取">进行需求获取</h3>
+<h3 id="定义需求">定义需求</h3>
+<pre><code>- **需求就是用户的一种期望，软件系统通过满足用户的期望来解决用户的问题**
+- 期望可以发生在多个抽象层面上
+</code></pre>
+<ul>
+<li>定义业务（商业）需求
+<ul>
+<li>抽象层次最高</li>
+<li>是系统建立战略的出发点</li>
+<li>是最高层次的目标</li>
+<li>描述为什么要开发这一个系统</li>
+</ul>
+</li>
+<li>定义用户需求
+<ul>
+<li>是执行实际工作的用户对系统所能完成的具体任务的期望</li>
+<li>描述系统能够帮助用户做什么</li>
+<li>主要来自用户</li>
+</ul>
+</li>
+<li>定义系统需求
+<ul>
+<li>系统级需求（System Requirement）是用户对系统行为的期望，每个系统级需求反映了一次外界与系统的交互行为，或者系统的一个实现细节。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="需求分析方法建模">需求分析方法（建模）</h2>
+<h3 id="整体需求分析过程及方法概述">整体需求分析过程及方法概述：</h3>
+<ol>
+<li>获取结果（用户的理解，问题的描述）</li>
+<li>需求分析（建立分析模型，创建解决方案）</li>
+<li>需求开发目标（共同的理解，解决方案的描述）<br>
+构建需求分析模型：达到甲乙方对需求的理解<br>
+在需求的基础上开始创建系统的解决方案</li>
+</ol>
+<h3 id="结构化方法">结构化方法</h3>
+<p><strong>结构化方法：</strong></p>
+<ul>
+<li>
+<p>数据流图DFD（Data Flow Diagram）<br>
+从数据传递和加工的角度，描述了系统从输入到输出的功能处理过程。运用功能分解的方法，用层次结构简化处理复杂的问题</p>
+</li>
+<li>
+<p>实体关系图ERD（Entity Relationship Diagram）<br>
+描述系统中的数据对象及其关系，定义了系统中使用处理和产生的所有数据<br>
+<strong>面向对象方法：</strong></p>
+</li>
+<li>
+<p>用例图 Use Case Diagram<br>
+描述用户与系统的交互。从交互的角度说明了系统的功能和功能范围</p>
+</li>
+<li>
+<p>类图 Class Diagram<br>
+描述应用领域中重要的概念以及概念之间的关系，他捕获了系统的静态结构</p>
+</li>
+<li>
+<p>交互图 Sequence Diagram<br>
+描述系统中一次交互的行为过程，说明了交互中的对象协作关系</p>
+</li>
+<li>
+<p>状态图 State Diagram<br>
+描述系统、用例或者对象在其整个生命期内的状态变化和行为过程</p>
+</li>
+<li>
+<p>结构化分析方法把现实世界描绘为数据在信息系统中的流动，以及在数据流动过程中数据向信息的转化。</p>
+</li>
+<li>
+<p>上下文模型<br>
+上下文模型被用来说明一个系统的操作边界-他们展示了什么是在系统边界以外的组织和实体。<br>
+该模型显示了该系统与其交互的其他系统的交互及关系。</p>
+</li>
+<li>
+<p>数据流模型<br>
+数据流模型是描述系统数据处理的很直观的方法<br>
+数据流模型用来描述数据是怎样一步步在处理序列中流动的。<br>
+数据流分析经常独立于很多分析方法而存在</p>
+</li>
+<li>
+<p>结构化方法<br>
+顶层数据图：画系统的输入输出。顶层数据图用于表示上下文关系的数据流动<br>
+分层数据图<br>
+自顶向下进行分解</p>
+</li>
+<li>
+<p>数据流图 DFD（Data Flow Diagram）建模规则<br>
+处理的对象是数据，必须有输入输出<br>
+数据流必须与业务处理有一定的关系<br>
+DFD每一个元素应该有唯一标识符</p>
+</li>
+<li>
+<p>实体关系图</p>
+</li>
+</ul>
+<h3 id="uml统一建模语言">UML统一建模语言</h3>
+<ul>
+<li>通过建模可以实现的内容：<br>
+帮助实现构建系统在构建过程中的可视化<br>
+在构建过程中可以描述系统的结构和系统的行为<br>
+在构造系统时为开发者提供一个代码框架.<br>
+在构造过程中所做的设计决定文档化.</li>
+</ul>
+<p>UML是一种建模语言，是一种标准的表示，而不是一种方法。<br>
+UML和RUP是软件开发过程中跟的最佳拍档</p>
+<ul>
+<li>
+<p>UML的事物：</p>
+</li>
+<li>
+<p>结构事物<br>
+类 接口 协作 用例 组件 节点</p>
+</li>
+<li>
+<p>行为事物<br>
+交互 状态机</p>
+</li>
+<li>
+<p>分组事物</p>
+</li>
+<li>
+<p>注释事物</p>
+</li>
+<li>
+<p>UML的关系<br>
+UML的关系是将UML的事物联系在一起的方式，UML中定义了四种关系：<br>
+（1）依赖关系（Dependency）：两个事物之间的语义关系，其中一个事物发生变化会影响另一个事物的语义。<br>
+（2）关联关系（Association）：一种描述一组对象之间连接的结构关系，如聚合关系就描述了整体和部分间的结构关系。<br>
+（3）泛化关系（Generalization）：一种一般化和特殊化的关系。<br>
+（4）实现关系（Realization） ：类之间的语义关系，其中的一个类指定了由另一个类保证执行的契约。</p>
+</li>
+</ul>
+<h3 id="面向对象分析方法">面向对象分析方法</h3>
+<ul>
+<li>用例模型</li>
+<li>用例建模的概念：Actor<br>
+An actor 表示的是位于系统边界之外和系统进行交互的任何实体<br>
+Actors 不是系统的一部分，他们代表的是使用系统的一种角色<br>
+An actor 可能代表机器、代表人、或代表外部的软件系统</li>
+<li>用例建模的概念：Use Case<br>
+A use case 由某一特定用户执行的一系列系统行为，并产生相应的结果.</li>
+<li>场景（scenarios）<br>
+场景是用例的一个实例化</li>
+<li>用例分析模型<br>
+进行用例建模的主要目的之一就是使得最终用户和开发团队对需求理解达成一致</li>
+<li>面向对象的分析与设计既不是自顶向下也不是自底向上</li>
+<li>分析与设计的目的:<br>
+将需求从问题域空间向解决域空间过渡。<br>
+开始考虑系统的架构问题。<br>
+将非功能需求和功能性需求融合，并将设计向实现进行过渡。</li>
+<li>面向对象分析用例实现步骤<br>
+补充用例描述<br>
+为每一个用例实现：根据用例图描述获取分析类 将用例行为分配给不同分析类<br>
+分析每一个识别出来的分析类<br>
+对应分析机制</li>
+</ul>
+<ol>
+<li>边界类<br>
+位于系统边界，提供系统内部与外部实体的接口<br>
+类型：用户界面类 系统接口类 外部设备接口类<br>
+<strong>每一对用户与用例对应一个边界类</strong></li>
+<li>实体类<br>
+是该系统的关键抽象<br>
+用于存储和管理该系统的信息<br>
+环境独立<br>
+划名词法</li>
+<li>控制类<br>
+控制类捕获的是所描述用例的业务逻辑<br>
+每一个用例可以识别出一个控制类</li>
+</ol>
+<ul>
+<li>顺序图</li>
+<li>合作图</li>
+</ul>
 
             </div>
             
@@ -595,7 +834,7 @@
     </li>
     <li class="post-copyright-link">
       <strong class="language" data-lan="link">本文链接：</strong>
-      <a href="https://caesaryangs.github.io/post/hello-gridea/" title="Hello Gridea">https://caesaryangs.github.io/post/hello-gridea/</a>
+      <a href="https://caesaryangs.github.io/post/need/" title="需求分析">https://caesaryangs.github.io/post/need/</a>
     </li>
     <li class="post-copyright-license">
       <strong class="language" data-lan="copyright">版权声明： </strong>
@@ -604,14 +843,22 @@
   </ul>
   <div class="tags">
     
-      <a href="https://caesaryangs.github.io/tag/vuHOgsrte/"># Gridea</a>
+      <a href="https://caesaryangs.github.io/tag/aCS9aRihI/"># Software Engineering Concept</a>
     
   </div>
   <div class="nav">
     <div class="nav-prev">
       
+        <i class="fa fa-chevron-left"></i>
+        <a class="nav-pc-next" title="架构分析&amp;设计" href="https://caesaryangs.github.io/post/jia-gou-fen-xi-andshe-ji/">架构分析&amp;设计</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="架构分析&amp;设计" href="https://caesaryangs.github.io/post/jia-gou-fen-xi-andshe-ji/">上一篇</a>
+      
     </div>
     <div class="nav-next">
+      
+        <a class="nav-pc-next" title="软件过程" href="https://caesaryangs.github.io/post/software-process/">软件过程</a>
+        <a class="nav-mobile-next" title="软件过程" href="https://caesaryangs.github.io/post/software-process/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>

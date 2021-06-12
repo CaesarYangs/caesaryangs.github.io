@@ -9,7 +9,7 @@
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#2e5c6e">
 <title>Stories</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1623240438147">
+<link rel="shortcut icon" href="/favicon.ico?v=1623507993273">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -197,7 +197,7 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-count">5</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
@@ -255,6 +255,12 @@
           <small class="language" data-lan="tag">标签</small>
         </h2>
       </div>
+      
+      
+      
+      
+      
+      
       
       
       
@@ -510,6 +516,413 @@
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://caesaryangs.github.io/post/jia-gou-fen-xi-andshe-ji/"" data-c="
+          &lt;ul&gt;
+&lt;li&gt;架构设计的初步及其重要性&lt;/li&gt;
+&lt;li&gt;三个角度理解架构设计风格&lt;/li&gt;
+&lt;li&gt;设计模式及设计原则&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;以架构为中心&#34;&gt;以架构为中心&lt;/h3&gt;
+&lt;p&gt;需求-&amp;gt;问题分析-&amp;gt;需求分析&lt;br&gt;
+问题域=&amp;gt;解决域&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;分析与设计过程：抽象或实现
+&lt;ul&gt;
+&lt;li&gt;软件体系结构设计（高层设计）——部件，连接件，配置&lt;/li&gt;
+&lt;li&gt;详细设计（低层设计）——数据结构与算法，类型，语句，控制结构&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;架构概念&#34;&gt;架构概念&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;体系结构抽象模型例：&lt;br&gt;
+[image:DB46E278-9D90-4543-B32E-6D1ED5E1CB37-19154-00008EA8E6C978C4/截屏2021-06-11 下午9.14.14.png]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;高层设计-architect&#34;&gt;高层设计-Architect&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;横向分层——软件逻辑分层&lt;/li&gt;
+&lt;li&gt;纵向分块——模块分解&lt;br&gt;
+部件 连接件 配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;想法来源于建筑学Architecture规划 总体设计即没有明确的定位 仅确定接口&lt;br&gt;
+架构也要从设计出发&lt;br&gt;
+仅考虑顶层的连接协议和关系 而内部则是详细设计&lt;br&gt;
+定义调用关系=&amp;gt;分层&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;详细设计-designer&#34;&gt;详细设计-Designer&lt;/h3&gt;
+&lt;p&gt;方法 属性 算法 数据结构&lt;/p&gt;
+&lt;h3 id=&#34;软件架构定义流派&#34;&gt;软件架构定义流派&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;::组成派：&lt;strong&gt;架构 = 组件+交互&lt;/strong&gt;::&lt;/li&gt;
+&lt;li&gt;::决策派：&lt;strong&gt;架构 = 重要决策集&lt;/strong&gt;::&lt;br&gt;
+&lt;strong&gt;架构是一系列重要决策的集合&lt;/strong&gt;&lt;br&gt;
+这些决策与以下内容有关：软件的组织，构成系统的结构元素及其接口的选择，这些元素在相互协作中明确表现出的行为，这些结构元素和行为元素进一步组合所构成的更大规模的子系统，以及指导这一组织——包括这些元素及其接口、它们的协作和它们的组合——架构风格。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;架构&#34;&gt;架构&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;软件体系架构：Components+Connectors+Configurations&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Components部件&lt;br&gt;
+“部件” 是软件体系结构的基本组成单位之一，承载系统的主要功能，包括处理与数据&lt;br&gt;
+可分为：原始primitive或复合composite&lt;/li&gt;
+&lt;li&gt;Connectors连接件&lt;br&gt;
+连接件”是软件体系结构的另一个组成单位，定义了部件间的交互，是连接的抽象表示&lt;br&gt;
+原始连接件或复合连接件&lt;/li&gt;
+&lt;li&gt;Configurations配置&lt;br&gt;
+“配置”是对“形式”的发展，定义了“部件”以及“连接件”之间的关联方式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;软件架构的作用&#34;&gt;软件架构的作用&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;连接业务目标与技术决策&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;控制系统复杂性：先进行架构设计，后进行详细设计和编码实现&lt;/li&gt;
+&lt;li&gt;组织开发：架构起到了桥梁的作用&lt;/li&gt;
+&lt;li&gt;利于迭代开发和增量交付&lt;/li&gt;
+&lt;li&gt;提高质量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;架构风格&#34;&gt;架构风格&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;框架只是一种# 特殊的软件，框架也有架构。&lt;/li&gt;
+&lt;li&gt;框架一般是经过很多人使用，结构良好，有良好的扩展性和可复用性&lt;br&gt;
+一般位于底层应用平台和高层业务逻辑之间的&lt;strong&gt;中间层&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;分层：Call&amp;amp;Return 面向对象分层&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;分层：从不同的层次来观察系统，处理不同层次问题的对象被封装到不同的层中。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;软件为什么要分层？&lt;br&gt;
+为了实现“高内聚、低耦合”。把问题划分开来各个解决，易于控制，易于延展，易于分配资源…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;逻辑分层：上层是服务的用户 下层是服务的提供方 下层向上层提供服务 &lt;strong&gt;中上层调用下层&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;管道和过滤器Pipe &amp;amp; Filters、&lt;/li&gt;
+&lt;li&gt;看板 Board&lt;br&gt;
+分布式软件：&lt;/li&gt;
+&lt;li&gt;客户 服务器端&lt;/li&gt;
+&lt;li&gt;点对点 Peer to Peer&lt;br&gt;
+交互软件&lt;/li&gt;
+&lt;li&gt;显示 视图 控制器  MVC&lt;/li&gt;
+&lt;li&gt;显示 抽象 控制 Presentation-Abstract-Control&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2-设计模式设计原则&#34;&gt;2 设计模式&amp;amp;设计原则&lt;/h2&gt;
+&lt;h3 id=&#34;bridge桥梁模式-对象结构模式&#34;&gt;Bridge桥梁模式-对象结构模式&lt;/h3&gt;
+&lt;p&gt;将抽象和现实解耦，使二者可以独立的变化&lt;br&gt;
+即：::&lt;strong&gt;将抽象部分与它的现实部分分离，使他们都可以独立的变化&lt;/strong&gt;::&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;设计原则1: 组合优先&lt;/strong&gt;&lt;br&gt;
+优先使用组合，而不是继承&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;设计原则2: 封装可变性&lt;/strong&gt;&lt;br&gt;
+发现代码容易变化的部分，将其封装。使之和不容易变化的部分独立开来&lt;br&gt;
+发现变化点=&amp;gt;封装变化点=&amp;gt;使变化点和不变化点独立开来=&amp;gt;确定相互之间的关系&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;设计原则3: 开闭原则 OCP&lt;/strong&gt;&lt;br&gt;
+在设计一个软件的时候，应当使这个软件可以在不被修改的前提下扩展。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[image:CEDBA6DB-A787-4197-B90F-C6BFE10242DA-617-0000007B5266C738/图像2021-5-31 下午8.18.jpeg]&lt;/p&gt;
+&lt;h3 id=&#34;adapter适配器模式&#34;&gt;Adapter适配器模式&lt;/h3&gt;
+&lt;p&gt;问题提出：新老代码接口不一致&lt;br&gt;
+应用（对象）适配器实现接口转换&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;将一个类的接口转换成客户希望的另外一个接口&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Adapter模式使得原本由于接口不兼容二不能一起工作的那些类可以一起工作&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;理解1:接口转换&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;理解2:重新包装，改变接口&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;里氏代还原则&lt;/strong&gt;&lt;br&gt;
+凡是父类适用的地方子类也应当适用&lt;br&gt;
+子类适用的地方不要求父类一定能适用&lt;br&gt;
+[image:74FB8B9E-122D-4B9E-91E9-E81E56DE8AAC-617-0000007CE4A43F1C/图像2021-5-31 下午8.22.jpeg]&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;factory-method工厂方法模式&#34;&gt;Factory Method工厂方法模式&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;设计原则5: 依赖倒置原则 DIP&lt;/strong&gt;&lt;br&gt;
+抽象不应当依赖于细节&lt;br&gt;
+细节应当依赖于抽象&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;设计原则6: 针对接口编程&lt;/strong&gt;&lt;br&gt;
+要针对接口编程&lt;br&gt;
+不要针对现实编程&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;简单工厂模式&lt;/strong&gt;&lt;br&gt;
+所有具体产品对象的创建都放在一个类中，一旦增加新的产品，工厂类要被修改。&lt;br&gt;
+实现了责任分割&lt;br&gt;
+并没有完全实现OCP原则&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工厂模式&lt;/strong&gt;&lt;br&gt;
+使用多态来应对
+&lt;ul&gt;
+&lt;li&gt;提供一个抽象工厂的接口&lt;/li&gt;
+&lt;li&gt;具体工厂分别负责创建具体产品对象&lt;/li&gt;
+&lt;li&gt;增加新的产品只需要增加新的具体工厂类&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;定义一个用于创建对象的接口，让子类决定实例化哪一个类&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;使一个类的实例话延迟到其子类&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;实践层面进行架构分析与设计方法&#34;&gt;实践层面进行架构分析与设计方法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;定义架构的模式，框架，关键的机制以及建模规约&lt;/li&gt;
+&lt;li&gt;定义系统的重用机制&lt;/li&gt;
+&lt;li&gt;架构是一系列重要决策的集合&lt;/li&gt;
+&lt;/ul&gt;
+">架构分析&设计</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://caesaryangs.github.io/post/need/"" data-c="
+          &lt;h1 id=&#34;需求分析&#34;&gt;需求分析&lt;/h1&gt;
+&lt;p&gt;#软件工程导论#&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;什么是一个好的软件产品&lt;br&gt;
+质量：以往的观点&lt;br&gt;
+满足需求文档 通过系统测试 遵循开发过程&lt;br&gt;
+质量：现在的要求&lt;br&gt;
+理解全部&lt;strong&gt;涉众&lt;/strong&gt;的需要 对所有开发产物进行持续质量检测&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;软件需求需求工程&#34;&gt;软件需求&amp;amp;需求工程&lt;/h2&gt;
+&lt;h3 id=&#34;需求工程&#34;&gt;需求工程&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;定义：理解并定义系统需要哪些&lt;strong&gt;服务&lt;/strong&gt;以及找出开发和运行期间受到哪些&lt;strong&gt;约束&lt;/strong&gt;的过程&lt;/li&gt;
+&lt;li&gt;目的：用最小的代价在尽可能短的时间里确定该软件项目是否能够开发，是否值得去开发&lt;br&gt;
+开发风险，资源有效性，技术水平，开发人员评估能力&lt;br&gt;
+开发成本估算&lt;br&gt;
+知识产权评估，社会责任评估&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;软件需求&#34;&gt;软件需求&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;输入+功能+非功能性需求+设计约束+输出&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;目标=&amp;gt;商业需求：系统特性&lt;/li&gt;
+&lt;li&gt;任务=&amp;gt;用户需求：问题域&lt;br&gt;
+用自然语言加图标给出的关于系统需要提供哪些服务以及系统操作收到哪些约束的声明&lt;/li&gt;
+&lt;li&gt;系统行为=&amp;gt;系统需求：需求分析模型&lt;br&gt;
+详细地给出系统要提供的服务以及系统所受到的约束 经常作为合同双方附件内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;软件需求类型&#34;&gt;软件需求类型&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;功能需求&lt;br&gt;
+系统应该提供的服务，如何对输入作出反应以及系统在特定条件下的行为描述&lt;br&gt;
+明确系统不应该做什么&lt;/li&gt;
+&lt;li&gt;非功能需求&lt;br&gt;
+对系统提供的服务或功能给出的约束&lt;br&gt;
+时间约束 开发过程约束 标准
+&lt;ul&gt;
+&lt;li&gt;与产品相关的非功能需求—不直接与系统具体功能相关的需求&lt;br&gt;
+可靠性 时间响应及储存 IO能力&lt;/li&gt;
+&lt;li&gt;与过程相关的非功能需求&lt;br&gt;
+对质量标准的描述 CASE工具的约束等&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;非功能需求也许比功能需求更加关键，如果非功能需求满足不了，系统可能无用&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;领域需求&lt;br&gt;
+来自系统的应用领域的需求，反映该领域的特点&lt;br&gt;
+可为功能性需求或非功能性需求&lt;/li&gt;
+&lt;li&gt;产品需求&lt;br&gt;
+叙述产品行为的需求&lt;/li&gt;
+&lt;li&gt;组织结构需求&lt;br&gt;
+客户所在机构和开发者所在机构中的政策需求和规定。过程标准，实现要求交付要求等。&lt;/li&gt;
+&lt;li&gt;外部需求&lt;br&gt;
+包括所有系统外部因素和开发过程。&lt;br&gt;
+互操作需求；法律需求；道德需求&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;目标和需求&#34;&gt;目标和需求&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;非功能需求难点在于描述的准确性造成了其验证的难度&lt;/li&gt;
+&lt;li&gt;尽量将目标转化为可检验的非功能性需求&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;即：只要有可能就应该对需求加以量化，保证它的可验证性&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;需求获取及描述方法&#34;&gt;需求获取及描述方法&lt;/h2&gt;
+&lt;h3 id=&#34;获取系统用户信息&#34;&gt;获取系统用户信息&lt;/h3&gt;
+&lt;h3 id=&#34;进行需求获取&#34;&gt;进行需求获取&lt;/h3&gt;
+&lt;h3 id=&#34;定义需求&#34;&gt;定义需求&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;- **需求就是用户的一种期望，软件系统通过满足用户的期望来解决用户的问题**
+- 期望可以发生在多个抽象层面上
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;定义业务（商业）需求
+&lt;ul&gt;
+&lt;li&gt;抽象层次最高&lt;/li&gt;
+&lt;li&gt;是系统建立战略的出发点&lt;/li&gt;
+&lt;li&gt;是最高层次的目标&lt;/li&gt;
+&lt;li&gt;描述为什么要开发这一个系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;定义用户需求
+&lt;ul&gt;
+&lt;li&gt;是执行实际工作的用户对系统所能完成的具体任务的期望&lt;/li&gt;
+&lt;li&gt;描述系统能够帮助用户做什么&lt;/li&gt;
+&lt;li&gt;主要来自用户&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;定义系统需求
+&lt;ul&gt;
+&lt;li&gt;系统级需求（System Requirement）是用户对系统行为的期望，每个系统级需求反映了一次外界与系统的交互行为，或者系统的一个实现细节。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;需求分析方法建模&#34;&gt;需求分析方法（建模）&lt;/h2&gt;
+&lt;h3 id=&#34;整体需求分析过程及方法概述&#34;&gt;整体需求分析过程及方法概述：&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;获取结果（用户的理解，问题的描述）&lt;/li&gt;
+&lt;li&gt;需求分析（建立分析模型，创建解决方案）&lt;/li&gt;
+&lt;li&gt;需求开发目标（共同的理解，解决方案的描述）&lt;br&gt;
+构建需求分析模型：达到甲乙方对需求的理解&lt;br&gt;
+在需求的基础上开始创建系统的解决方案&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;结构化方法&#34;&gt;结构化方法&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;结构化方法：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;数据流图DFD（Data Flow Diagram）&lt;br&gt;
+从数据传递和加工的角度，描述了系统从输入到输出的功能处理过程。运用功能分解的方法，用层次结构简化处理复杂的问题&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实体关系图ERD（Entity Relationship Diagram）&lt;br&gt;
+描述系统中的数据对象及其关系，定义了系统中使用处理和产生的所有数据&lt;br&gt;
+&lt;strong&gt;面向对象方法：&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;用例图 Use Case Diagram&lt;br&gt;
+描述用户与系统的交互。从交互的角度说明了系统的功能和功能范围&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;类图 Class Diagram&lt;br&gt;
+描述应用领域中重要的概念以及概念之间的关系，他捕获了系统的静态结构&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;交互图 Sequence Diagram&lt;br&gt;
+描述系统中一次交互的行为过程，说明了交互中的对象协作关系&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;状态图 State Diagram&lt;br&gt;
+描述系统、用例或者对象在其整个生命期内的状态变化和行为过程&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;结构化分析方法把现实世界描绘为数据在信息系统中的流动，以及在数据流动过程中数据向信息的转化。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;上下文模型&lt;br&gt;
+上下文模型被用来说明一个系统的操作边界-他们展示了什么是在系统边界以外的组织和实体。&lt;br&gt;
+该模型显示了该系统与其交互的其他系统的交互及关系。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;数据流模型&lt;br&gt;
+数据流模型是描述系统数据处理的很直观的方法&lt;br&gt;
+数据流模型用来描述数据是怎样一步步在处理序列中流动的。&lt;br&gt;
+数据流分析经常独立于很多分析方法而存在&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;结构化方法&lt;br&gt;
+顶层数据图：画系统的输入输出。顶层数据图用于表示上下文关系的数据流动&lt;br&gt;
+分层数据图&lt;br&gt;
+自顶向下进行分解&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;数据流图 DFD（Data Flow Diagram）建模规则&lt;br&gt;
+处理的对象是数据，必须有输入输出&lt;br&gt;
+数据流必须与业务处理有一定的关系&lt;br&gt;
+DFD每一个元素应该有唯一标识符&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实体关系图&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;uml统一建模语言&#34;&gt;UML统一建模语言&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;通过建模可以实现的内容：&lt;br&gt;
+帮助实现构建系统在构建过程中的可视化&lt;br&gt;
+在构建过程中可以描述系统的结构和系统的行为&lt;br&gt;
+在构造系统时为开发者提供一个代码框架.&lt;br&gt;
+在构造过程中所做的设计决定文档化.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;UML是一种建模语言，是一种标准的表示，而不是一种方法。&lt;br&gt;
+UML和RUP是软件开发过程中跟的最佳拍档&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;UML的事物：&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;结构事物&lt;br&gt;
+类 接口 协作 用例 组件 节点&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;行为事物&lt;br&gt;
+交互 状态机&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;分组事物&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;注释事物&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;UML的关系&lt;br&gt;
+UML的关系是将UML的事物联系在一起的方式，UML中定义了四种关系：&lt;br&gt;
+（1）依赖关系（Dependency）：两个事物之间的语义关系，其中一个事物发生变化会影响另一个事物的语义。&lt;br&gt;
+（2）关联关系（Association）：一种描述一组对象之间连接的结构关系，如聚合关系就描述了整体和部分间的结构关系。&lt;br&gt;
+（3）泛化关系（Generalization）：一种一般化和特殊化的关系。&lt;br&gt;
+（4）实现关系（Realization） ：类之间的语义关系，其中的一个类指定了由另一个类保证执行的契约。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;面向对象分析方法&#34;&gt;面向对象分析方法&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;用例模型&lt;/li&gt;
+&lt;li&gt;用例建模的概念：Actor&lt;br&gt;
+An actor 表示的是位于系统边界之外和系统进行交互的任何实体&lt;br&gt;
+Actors 不是系统的一部分，他们代表的是使用系统的一种角色&lt;br&gt;
+An actor 可能代表机器、代表人、或代表外部的软件系统&lt;/li&gt;
+&lt;li&gt;用例建模的概念：Use Case&lt;br&gt;
+A use case 由某一特定用户执行的一系列系统行为，并产生相应的结果.&lt;/li&gt;
+&lt;li&gt;场景（scenarios）&lt;br&gt;
+场景是用例的一个实例化&lt;/li&gt;
+&lt;li&gt;用例分析模型&lt;br&gt;
+进行用例建模的主要目的之一就是使得最终用户和开发团队对需求理解达成一致&lt;/li&gt;
+&lt;li&gt;面向对象的分析与设计既不是自顶向下也不是自底向上&lt;/li&gt;
+&lt;li&gt;分析与设计的目的:&lt;br&gt;
+将需求从问题域空间向解决域空间过渡。&lt;br&gt;
+开始考虑系统的架构问题。&lt;br&gt;
+将非功能需求和功能性需求融合，并将设计向实现进行过渡。&lt;/li&gt;
+&lt;li&gt;面向对象分析用例实现步骤&lt;br&gt;
+补充用例描述&lt;br&gt;
+为每一个用例实现：根据用例图描述获取分析类 将用例行为分配给不同分析类&lt;br&gt;
+分析每一个识别出来的分析类&lt;br&gt;
+对应分析机制&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;边界类&lt;br&gt;
+位于系统边界，提供系统内部与外部实体的接口&lt;br&gt;
+类型：用户界面类 系统接口类 外部设备接口类&lt;br&gt;
+&lt;strong&gt;每一对用户与用例对应一个边界类&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;实体类&lt;br&gt;
+是该系统的关键抽象&lt;br&gt;
+用于存储和管理该系统的信息&lt;br&gt;
+环境独立&lt;br&gt;
+划名词法&lt;/li&gt;
+&lt;li&gt;控制类&lt;br&gt;
+控制类捕获的是所描述用例的业务逻辑&lt;br&gt;
+每一个用例可以识别出一个控制类&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;顺序图&lt;/li&gt;
+&lt;li&gt;合作图&lt;/li&gt;
+&lt;/ul&gt;
+">需求分析</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://caesaryangs.github.io/post/software-process/"" data-c="

@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#2e5c6e">
-<title>Hello Gridea | Stories</title>
+<title>架构分析&amp;设计 | Stories</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1623507993273">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -38,8 +38,8 @@
 
 
 
-  <meta name="description" content="Hello Gridea" />
-  <meta name="keywords" content="Gridea" />
+  <meta name="description" content="架构分析&设计" />
+  <meta name="keywords" content="" />
 </head>
 
 <body>
@@ -255,7 +255,29 @@
     <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E7%89%B9%E6%80%A7">特性👇</a></li>
+<li>
+<ul>
+<li><a href="#%E4%BB%A5%E6%9E%B6%E6%9E%84%E4%B8%BA%E4%B8%AD%E5%BF%83">以架构为中心</a></li>
+</ul>
+</li>
+<li><a href="#%E6%9E%B6%E6%9E%84%E6%A6%82%E5%BF%B5">架构概念</a>
+<ul>
+<li><a href="#%E9%AB%98%E5%B1%82%E8%AE%BE%E8%AE%A1-architect">高层设计-Architect</a></li>
+<li><a href="#%E8%AF%A6%E7%BB%86%E8%AE%BE%E8%AE%A1-designer">详细设计-Designer</a></li>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E5%AE%9A%E4%B9%89%E6%B5%81%E6%B4%BE">软件架构定义流派</a></li>
+<li><a href="#%E6%9E%B6%E6%9E%84">架构</a></li>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E7%9A%84%E4%BD%9C%E7%94%A8">软件架构的作用</a></li>
+<li><a href="#%E6%9E%B6%E6%9E%84%E9%A3%8E%E6%A0%BC">架构风格</a></li>
+</ul>
+</li>
+<li><a href="#2-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99">2 设计模式&amp;设计原则</a>
+<ul>
+<li><a href="#bridge%E6%A1%A5%E6%A2%81%E6%A8%A1%E5%BC%8F-%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E6%A8%A1%E5%BC%8F">Bridge桥梁模式-对象结构模式</a></li>
+<li><a href="#adapter%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F">Adapter适配器模式</a></li>
+<li><a href="#factory-method%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F">Factory Method工厂方法模式</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AE%9E%E8%B7%B5%E5%B1%82%E9%9D%A2%E8%BF%9B%E8%A1%8C%E6%9E%B6%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95">实践层面进行架构分析与设计方法</a></li>
 </ul>
 </li>
 </ul>
@@ -523,8 +545,8 @@
           <div class="section bg-color post post-page">
             <section class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://caesaryangs.github.io/post/hello-gridea/">
-      Hello Gridea
+    <a class="post-title-link" href="https://caesaryangs.github.io/post/jia-gou-fen-xi-andshe-ji/">
+      架构分析&amp;设计
     </a>
   </h1>
   <div class="post-meta">
@@ -532,57 +554,182 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span class="language" data-lan="publish">发布于</span>
-      <span class="publish-time" data-t="2018-12-12 00:00:00">2018-12-12</span>
+      <span class="publish-time" data-t="2021-06-12 22:24:46">2021-06-12</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
-      <i class="fa fa-folder-o"></i>
-      <span class="pc-show language" data-lan="category-in">分类于</span>
-      
-      
-      <a href="https://caesaryangs.github.io/tag/vuHOgsrte/">
-        <span>Gridea</span>
-      </a>
-      
-      
-    </span>
-    <span class="post-meta-divider">|</span>
-    
-    <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>2<span class="language" data-lan="minute">分钟</span></span>
+      <span>6<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>298<span class="pc-show language" data-lan="words">字数</span></span>
+      <span>1513<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
   </div>
 </section>
             <div class="post-body next-md-body" id="post_body">
-              <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+              <ul>
+<li>架构设计的初步及其重要性</li>
+<li>三个角度理解架构设计风格</li>
+<li>设计模式及设计原则</li>
+</ul>
+<h3 id="以架构为中心">以架构为中心</h3>
+<p>需求-&gt;问题分析-&gt;需求分析<br>
+问题域=&gt;解决域</p>
+<ul>
+<li>分析与设计过程：抽象或实现
+<ul>
+<li>软件体系结构设计（高层设计）——部件，连接件，配置</li>
+<li>详细设计（低层设计）——数据结构与算法，类型，语句，控制结构</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="架构概念">架构概念</h2>
+<ul>
+<li>体系结构抽象模型例：<br>
+[image:DB46E278-9D90-4543-B32E-6D1ED5E1CB37-19154-00008EA8E6C978C4/截屏2021-06-11 下午9.14.14.png]</li>
+</ul>
+<h3 id="高层设计-architect">高层设计-Architect</h3>
+<ul>
+<li>横向分层——软件逻辑分层</li>
+<li>纵向分块——模块分解<br>
+部件 连接件 配置</li>
+</ul>
+<blockquote>
+<p>想法来源于建筑学Architecture规划 总体设计即没有明确的定位 仅确定接口<br>
+架构也要从设计出发<br>
+仅考虑顶层的连接协议和关系 而内部则是详细设计<br>
+定义调用关系=&gt;分层</p>
+</blockquote>
+<h3 id="详细设计-designer">详细设计-Designer</h3>
+<p>方法 属性 算法 数据结构</p>
+<h3 id="软件架构定义流派">软件架构定义流派</h3>
+<ul>
+<li>::组成派：<strong>架构 = 组件+交互</strong>::</li>
+<li>::决策派：<strong>架构 = 重要决策集</strong>::<br>
+<strong>架构是一系列重要决策的集合</strong><br>
+这些决策与以下内容有关：软件的组织，构成系统的结构元素及其接口的选择，这些元素在相互协作中明确表现出的行为，这些结构元素和行为元素进一步组合所构成的更大规模的子系统，以及指导这一组织——包括这些元素及其接口、它们的协作和它们的组合——架构风格。</li>
+</ul>
+<h3 id="架构">架构</h3>
+<p><strong>软件体系架构：Components+Connectors+Configurations</strong></p>
+<ul>
+<li>Components部件<br>
+“部件” 是软件体系结构的基本组成单位之一，承载系统的主要功能，包括处理与数据<br>
+可分为：原始primitive或复合composite</li>
+<li>Connectors连接件<br>
+连接件”是软件体系结构的另一个组成单位，定义了部件间的交互，是连接的抽象表示<br>
+原始连接件或复合连接件</li>
+<li>Configurations配置<br>
+“配置”是对“形式”的发展，定义了“部件”以及“连接件”之间的关联方式</li>
+</ul>
+<h3 id="软件架构的作用">软件架构的作用</h3>
+<ul>
+<li><strong>连接业务目标与技术决策</strong></li>
+<li>控制系统复杂性：先进行架构设计，后进行详细设计和编码实现</li>
+<li>组织开发：架构起到了桥梁的作用</li>
+<li>利于迭代开发和增量交付</li>
+<li>提高质量</li>
+</ul>
+<h3 id="架构风格">架构风格</h3>
+<ul>
+<li>框架只是一种# 特殊的软件，框架也有架构。</li>
+<li>框架一般是经过很多人使用，结构良好，有良好的扩展性和可复用性<br>
+一般位于底层应用平台和高层业务逻辑之间的<strong>中间层</strong></li>
+</ul>
+<ul>
+<li>分层：Call&amp;Return 面向对象分层</li>
+</ul>
+<blockquote>
+<p>分层：从不同的层次来观察系统，处理不同层次问题的对象被封装到不同的层中。</p>
+</blockquote>
+<ul>
+<li>软件为什么要分层？<br>
+为了实现“高内聚、低耦合”。把问题划分开来各个解决，易于控制，易于延展，易于分配资源…</li>
+</ul>
+<blockquote>
+<p>逻辑分层：上层是服务的用户 下层是服务的提供方 下层向上层提供服务 <strong>中上层调用下层</strong></p>
+</blockquote>
+<ul>
+<li>管道和过滤器Pipe &amp; Filters、</li>
+<li>看板 Board<br>
+分布式软件：</li>
+<li>客户 服务器端</li>
+<li>点对点 Peer to Peer<br>
+交互软件</li>
+<li>显示 视图 控制器  MVC</li>
+<li>显示 抽象 控制 Presentation-Abstract-Control</li>
+</ul>
+<hr>
+<h2 id="2-设计模式设计原则">2 设计模式&amp;设计原则</h2>
+<h3 id="bridge桥梁模式-对象结构模式">Bridge桥梁模式-对象结构模式</h3>
+<p>将抽象和现实解耦，使二者可以独立的变化<br>
+即：::<strong>将抽象部分与它的现实部分分离，使他们都可以独立的变化</strong>::</p>
+<ul>
+<li><strong>设计原则1: 组合优先</strong><br>
+优先使用组合，而不是继承</li>
+<li><strong>设计原则2: 封装可变性</strong><br>
+发现代码容易变化的部分，将其封装。使之和不容易变化的部分独立开来<br>
+发现变化点=&gt;封装变化点=&gt;使变化点和不变化点独立开来=&gt;确定相互之间的关系</li>
+<li><strong>设计原则3: 开闭原则 OCP</strong><br>
+在设计一个软件的时候，应当使这个软件可以在不被修改的前提下扩展。</li>
+</ul>
+<p>[image:CEDBA6DB-A787-4197-B90F-C6BFE10242DA-617-0000007B5266C738/图像2021-5-31 下午8.18.jpeg]</p>
+<h3 id="adapter适配器模式">Adapter适配器模式</h3>
+<p>问题提出：新老代码接口不一致<br>
+应用（对象）适配器实现接口转换</p>
+<ul>
+<li>
+<p>将一个类的接口转换成客户希望的另外一个接口</p>
+</li>
+<li>
+<p>Adapter模式使得原本由于接口不兼容二不能一起工作的那些类可以一起工作</p>
+</li>
+<li>
+<p><strong>理解1:接口转换</strong></p>
+</li>
+<li>
+<p><strong>理解2:重新包装，改变接口</strong></p>
+</li>
+<li>
+<p><strong>里氏代还原则</strong><br>
+凡是父类适用的地方子类也应当适用<br>
+子类适用的地方不要求父类一定能适用<br>
+[image:74FB8B9E-122D-4B9E-91E9-E81E56DE8AAC-617-0000007CE4A43F1C/图像2021-5-31 下午8.22.jpeg]</p>
+</li>
+</ul>
+<h3 id="factory-method工厂方法模式">Factory Method工厂方法模式</h3>
+<ul>
+<li><strong>设计原则5: 依赖倒置原则 DIP</strong><br>
+抽象不应当依赖于细节<br>
+细节应当依赖于抽象</li>
+<li><strong>设计原则6: 针对接口编程</strong><br>
+要针对接口编程<br>
+不要针对现实编程</li>
+<li><strong>简单工厂模式</strong><br>
+所有具体产品对象的创建都放在一个类中，一旦增加新的产品，工厂类要被修改。<br>
+实现了责任分割<br>
+并没有完全实现OCP原则</li>
+<li><strong>工厂模式</strong><br>
+使用多态来应对
+<ul>
+<li>提供一个抽象工厂的接口</li>
+<li>具体工厂分别负责创建具体产品对象</li>
+<li>增加新的产品只需要增加新的具体工厂类</li>
+<li><strong>定义一个用于创建对象的接口，让子类决定实例化哪一个类</strong></li>
+<li><strong>使一个类的实例话延迟到其子类</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="实践层面进行架构分析与设计方法">实践层面进行架构分析与设计方法</h2>
+<ul>
+<li>定义架构的模式，框架，关键的机制以及建模规约</li>
+<li>定义系统的重用机制</li>
+<li>架构是一系列重要决策的集合</li>
+</ul>
 
             </div>
             
@@ -595,7 +742,7 @@
     </li>
     <li class="post-copyright-link">
       <strong class="language" data-lan="link">本文链接：</strong>
-      <a href="https://caesaryangs.github.io/post/hello-gridea/" title="Hello Gridea">https://caesaryangs.github.io/post/hello-gridea/</a>
+      <a href="https://caesaryangs.github.io/post/jia-gou-fen-xi-andshe-ji/" title="架构分析&amp;设计">https://caesaryangs.github.io/post/jia-gou-fen-xi-andshe-ji/</a>
     </li>
     <li class="post-copyright-license">
       <strong class="language" data-lan="copyright">版权声明： </strong>
@@ -604,14 +751,16 @@
   </ul>
   <div class="tags">
     
-      <a href="https://caesaryangs.github.io/tag/vuHOgsrte/"># Gridea</a>
-    
   </div>
   <div class="nav">
     <div class="nav-prev">
       
     </div>
     <div class="nav-next">
+      
+        <a class="nav-pc-next" title="需求分析" href="https://caesaryangs.github.io/post/need/">需求分析</a>
+        <a class="nav-mobile-next" title="需求分析" href="https://caesaryangs.github.io/post/need/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>
